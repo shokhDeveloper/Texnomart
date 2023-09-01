@@ -1,0 +1,22 @@
+@mixin flex($justify-content){
+    display: flex;
+    align-items: center;
+    justify-content: $justify-content;
+}
+@function PaddingSum($x, $y){
+    @if $y {
+        $result: $x + $y;
+        @return $result;
+    }
+    @else  {
+        @return $x
+    }
+};
+@mixin grid($rowsCount, $rowsCountHeight, $columnWidth, $columnWidth2 ){
+    display: grid;
+    grid-template: repeat($rowsCount, $rowsCountHeight)  /  $columnWidth  $columnWidth2 ;
+}
+@mixin gridExample($rowsCount, $rowsCountHeight, $columnRepeat, $columnWidth){
+    display: grid;
+    grid-template: repeat($rowsCount, $rowsCountHeight)  / $columnRepeat, $columnWidth ;
+}

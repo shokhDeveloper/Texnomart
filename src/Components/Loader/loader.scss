@@ -1,0 +1,7 @@
+@use "../../Settings/scss/functions.scss";
+.loader{
+    background: #fff;
+    @include functions.flex(center);
+    min-height: 100vh;
+    text-align: center;
+}

@@ -1,0 +1,119 @@
+@use "../../Settings/scss/functions.scss";
+@use "../../Settings/scss/variebles.scss";
+.site-header *{
+    margin: 0;
+}
+.header-top{
+    background: variebles.$b;
+}
+.headertop-inner{
+    @include functions.grid(1, auto, 60%, 22%);
+    align-items: center;
+    justify-content: space-between;
+}
+.headertop-nav{
+    flex-basis: 70%;
+    margin: 0;
+    padding: 0
+}
+.headertop-nav .headertop-list{
+    @include functions.flex(space-between);
+    margin: 0;
+    list-style: none;
+}
+.headertop-item .headertop-link{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding-bottom: 0.1rem;
+    
+}
+.headertop-elements{
+    flex-basis: 30%;
+    @include functions.flex(space-between);    
+}
+.headertop-elements .headertop-contact{
+    @include functions.flex(inherit);
+}
+.headertop-elements .headertop-contact p{
+    font-size: 13px;
+    color: #fff;
+    padding-right: 0.5rem;
+}
+.headertop-elements .headertop-contact a{
+    color: #fff;
+    text-decoration: none;
+}
+.headertop-elements select{
+    padding: 0.2rem ;
+    padding-left: 1.5rem;
+    padding-right: 0rem;
+    border-radius: 20px;
+    background-image: url("../../Settings/assets/images/Earth.png");
+    background-position: calc(10%) ;
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    text-align: center;
+    font-size: 13px;
+    background-color: transparent; 
+    color: #fff;
+    outline: 1px solid transparent;
+    border: 1px solid variebles.$border;
+}
+.headertop-elements select option{
+    color: black;
+}
+.headertop-list .headertop-item .headertop-link:first-child{
+    position: relative;
+}
+.headertop-bar {
+    display: none;
+    position: absolute;
+    left: 0rem;
+    top: 1.9rem;
+    list-style: none;
+    box-shadow: 0px 0px 5px -2px rgb(81, 81, 81);
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+    width: 150px;
+}
+.headertop-bar li{
+    padding: 1rem 0rem;
+    color: variebles.$b;
+    position: relative;
+    left: -2.3rem;
+    text-align:start;
+    padding-left: 0.5rem;    
+    min-width: 140px;
+}
+
+.headertop-list .headertop-item:first-child{
+    padding: 0.5rem 0rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+.headertop-list .headertop-item:first-child:hover .headertop-bar{
+    display:block;
+}
+.headertop-list .headertop-item .headertop-link:hover{
+    border-bottom: 1px solid #fff;
+}
+.headertop-bar li:hover{
+    text-decoration: underline;
+}
+.headertop-list .headertop-item:first-child:before{
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../Settings/assets/images/darkLocation.svg");
+    background-position: calc(0%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    filter: invert(1);
+}

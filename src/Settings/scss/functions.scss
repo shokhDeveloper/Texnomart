@@ -18,5 +18,7 @@
 }
 @mixin gridExample($rowsCount, $rowsCountHeight, $columnRepeat, $columnWidth){
     display: grid;
-    grid-template: repeat($rowsCount, $rowsCountHeight)  / $columnRepeat, $columnWidth ;
+    grid-template: repeat($rowsCount, $rowsCountHeight)  /  repeat($columnRepeat, $columnWidth) ;
+    grid-auto-columns: $columnWidth;
+    grid-auto-flow: column;
 }

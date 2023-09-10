@@ -2,13 +2,15 @@ import "./header.scss"
 import { NavLink } from "react-router-dom";
 import {changeLanguage} from "i18next"
 import {useTranslation} from "react-i18next" 
-import { Action, setItem } from "../../Settings";
+import { Action, Button, setItem } from "../../Settings";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
+import { HeaderCenter } from "./HeaderCenter";
+import { HeaderBottom } from "./HeaderBottom";
 
 export const Header = () => {
   const {t, i18n} = useTranslation()
-  const {position} = useSelector(state => state.Reducer)
+  const {position, user, token} = useSelector(state => state.Reducer)
   const dispatch = useDispatch()
   const handleChange = (event) => {
     changeLanguage(event.target.value)
@@ -33,7 +35,7 @@ export const Header = () => {
     }
   },[position])
   return (
-    <header className="site-header">
+    <header className="site-header" id="header">
       <div className="header-top">
         <div className="container">
           <div className="headertop-inner">
@@ -83,6 +85,8 @@ export const Header = () => {
           </div>
         </div>
       </div>
+    <HeaderCenter/>
+    <HeaderBottom/>
     </header>
   );
 };

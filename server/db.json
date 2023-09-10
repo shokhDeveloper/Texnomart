@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "email": "shohijahonmusinkulov@gmail.com",
+      "password": "$2a$10$qxH0DESjpo0jCzZMp.pfpegAA1bdskTkn4VvCy3/63EwF8WPihXEK",
+      "name": "Shohijahon",
+      "lastname": "Musinkulov",
+      "date": "11.09.2023, 01:09:18 Register at its user ",
+      "id": 1
+    },
+    {
+      "email": "leomessi@gmail.com",
+      "password": "$2a$10$LTRcAYkLIITmY7UChu1.0.e781lTGwLKLTGVQE4SibAFI4JFXA6CS",
+      "name": "Lionel",
+      "lastname": "Messi",
+      "date": "11.09.2023, 01:23:19 Register at its user ",
+      "id": 2
+    },
+    {
+      "email": "cristianoronaldo@gmail.com",
+      "password": "$2a$10$UVHgDQIjvhBIOmOOSfopGeQx1LYRtWyGYX8QtFLMxnqbwbZQMsGSa",
+      "name": "Cristiano",
+      "lastname": "Ronaldo",
+      "date": "11.09.2023, 01:40:46 Register at its user ",
+      "id": 3
+    }
+  ],
+  "posts": []
+}

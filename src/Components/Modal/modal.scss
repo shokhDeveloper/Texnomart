@@ -1,0 +1,110 @@
+@use "../../Settings/scss/functions.scss";
+@use "../../Settings/scss/variebles.scss";
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1111111;
+    @include functions.flex(center);
+}
+.modal-korzina{
+    width: 60%;
+    padding: 1rem;
+    padding-top: 0;
+    background: #fff;
+    height: auto;
+    border-radius: 10px;
+}
+
+.modal-sign{
+    width: 35%;
+    background: #fff;
+    padding: 1rem;
+    color: black;
+    height: auto;
+    border-radius: 10px
+}
+.modal-header{
+    @include functions.flex(space-between);
+}
+.modal-header-link{
+    flex-basis: 50%;
+    @include functions.flex(space-between)
+}
+.modal-header-link a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    letter-spacing: 1px;
+}
+.modal-header button{
+    background: transparent;   
+    font-size: 22px;
+}
+.modal-form-box{
+    width: 100%;
+    @include functions.flex(center);
+    margin-top: 2rem;
+}
+.modal-input-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}    
+.modal-input-box input{
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    border-radius: 4px;    
+    background: #fff;
+    margin: 1rem 0rem;
+    outline: 1px solid transparent;
+}
+.modal-input-box label{
+    position: absolute;
+    left: 1.2rem;
+    font-size: 14px; 
+    text-transform: uppercase;
+    transform-origin: left center;
+    background: #fff;
+    pointer-events: none;
+    transition: 0.3s ease all;
+    color: #e2ad00;
+}
+.active-input{
+    transition: 0.2s ease all;
+    padding: 0rem 0.8rem;
+    transform: translateY(-1.4rem) ;
+    color: variebles.$y;
+    font-size: 11px;
+    background: #fff;
+}
+.modal-button{
+    width: 100%;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
+.modal-input-box .default-input{
+    border: 2px solid #dbd8d8;
+}
+.modal-input-box .error-input{
+    border: 2px solid crimson;
+}
+.modal-body-box{
+    @include functions.flex(center);
+    text-align: center;
+}
+.modal-korzina-items img{
+    padding: 1rem;
+}
+.modal-korzina-items h4{
+    font-size: 23px;
+    color: variebles.$b;
+    line-height: 34px;
+}
+.modal-korzina-items button{
+    margin-bottom: 3rem ;
+    margin-top: 1rem;
+}

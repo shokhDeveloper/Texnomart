@@ -1,0 +1,34 @@
+import { useDispatch, useSelector } from "react-redux"
+import { useCart } from "react-use-cart"
+import { Action, Button } from "../Settings"
+import { useNavigate } from "react-router"
+
+export const Shopping = () => {
+    const {addItem, items} = useCart()
+    const {shoppingModal} = useSelector((state) => state.Reducer)
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
+    const tovar = {
+        name: "Iphone 14 pro max",
+        price: 1200,
+    }
+    return(
+        <>
+            <div className="modal-header">
+                <h3>Корзина</h3>
+                <button onClick={() => dispatch(Action.setShoppingModal(false))} className="border-transparent" >&times;</button>
+             </div>              
+             <div className="modal-body">
+                <div className="modal-body-box">
+                {!items?.length ? (
+                <div className="modal-korzina-items">
+                    <img width={100} height={100} src="https://texnomart.uz/_nuxt/img/shopping-card.24c7f25.svg" alt="" />
+                    <h4>В корзине пока <br /> ничего нет</h4>
+                    <Button onClick={() => dispatch(Action.setShoppingModal(false))} type="light" style={{textTransform: "inherit", borderRadius: "6px", "border": "2px solid #FBC100"}}>Перейти к покупкам</Button>
+                </div>
+                ): "Helo"}
+                </div>
+             </div>
+        </>
+    )
+}

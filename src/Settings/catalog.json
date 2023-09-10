@@ -1,0 +1,138 @@
+[
+    {
+        "title": "Maishiy texnika",
+        "cards": [
+            {
+                "title": "TIKUV MASHINALARI",
+                "texts":[
+                    "null😊"
+                ]
+            },
+            {
+                "title": "DAZMOL TAXTALARI",
+                "texts": [
+                    "null😊"
+                ]
+            },
+            {
+                "title": "Simsiz changyutkich",
+                "texts":[
+                    "null😊"
+                ]
+            },
+            {
+                "title": "Kir yuvgich mashinasi",
+                "texts":[
+                    "null😊"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Ofis jihozlari",
+        "cards": [
+            {
+                "title": "Ofis noutbuklari",
+                "texts": [
+                    "null😊"
+                ]
+            },
+            {
+                "title": "Ofis manitorlari",
+                "texts":[
+                    "null😊"
+                ]
+            },
+            {
+               "title": "Wi-fi routerlari",
+               "texts":[
+                    "null😊"
+               ]
+            },
+            {
+                "title": "Qalamlar",
+                "texts":[
+                    "null😊"
+                ]
+            }            
+        ]
+    },
+    {
+        "title": "Oshxona uchun texnika",
+        "cards": [
+            {
+                "title": "Kichik uskunalar",
+                "texts": [
+                    "null😊"
+                ]
+            },
+            {
+                "title": "Katta oshxona anjomlari",
+                "texts": [
+                    "null😊"
+                ]
+            },
+            {
+                "title": "O'rnatilgan maishiy texnika",
+                "texts":[
+                    "null😊"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Uy uchun idishlar",
+        "cards": [
+            {
+                "title": "Ovqat pishirish uchun ",
+                "texts": ["null😊"]
+            },
+            {
+                "title": "Stol uchun idishlari",
+                "texts": [
+                    "null 😊"
+                ]
+            },
+            {
+                "title": "Yordamchi ishlar",
+                "texts": [
+                    "null 😊"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Avtomobil uchun mahsulotlar",
+        "cards":[
+            {
+                "title": "Bosimli yuvish mashinalari",
+                "texts":["null 😊"]
+            },
+            {
+                "title": "Bosimli yuvish mashinalari",
+                "texts":["null 😊"]
+            },
+            {
+                "title": "Bosimli yuvish mashinalari",
+                "texts":["null 😊"]
+            }
+        ]
+    },
+    {
+        "title": "Iqlim texnikasi",
+        "cards": [
+            {
+                "title": "Kanditsiyaner",
+                "text": ["null😊"]
+            },
+            {
+                "title": "Kanditsiyaner",
+                "text": ["null😊"]
+            },
+            {
+                "title": "Kanditsiyaner",
+                "text": ["null😊"]
+            }
+        ]
+    }
+]

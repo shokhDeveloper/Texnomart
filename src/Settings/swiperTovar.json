@@ -1,0 +1,65 @@
+[
+    {
+        "cards":[
+            {
+                "img": "https://mini-io-api.texnomart.uz/catalog/special-brands/72/193da322-a1dd-40b6-9b4e-935463d2136f.webp"           
+            },
+            {
+                "img": "https://mini-io-api.texnomart.uz/catalog/special-brands/70/7160cc7e-711b-44bb-a6dc-77dca7ec4924.webp"
+            },
+            {
+                "img": "https://mini-io-api.texnomart.uz/catalog/special-brands/71/bef78df5-ec23-4e0c-aef4-80127a7447a6.webp"
+            },
+            {
+                "img": "https://mini-io-api.texnomart.uz/catalog/special-brands/80/f3c6e0a7-c734-4563-a285-1ad36ccb9018.webp"
+            },
+            {
+                "img": "https://mini-io-api.texnomart.uz/catalog/special-brands/76/7c448a2d-3dde-4cf3-8375-b7ef55544985.webp"
+            },
+            {
+                "img": "https://mini-io-api.texnomart.uz/catalog/special-brands/73/9f3f6966-5f68-4bd1-a918-21f6f2c68f26.webp"
+            },
+            {
+                "img": "https://mini-io-api.texnomart.uz/catalog/special-brands/69/7cf53119-fae2-4da7-a479-88df9bd86d3a.webp"
+            },
+            {
+                "img": "https://mini-io-api.texnomart.uz/catalog/special-brands/74/c53e8986-c05a-4af7-b5a6-adafe1f04bff.webp"
+            },
+            {
+                "img": "https://mini-io-api.texnomart.uz/catalog/special-brands/75/cb377838-24b4-4c67-8efb-42f81678c320.webp"
+            }
+        ]
+    },
+    {
+        "cards":[
+         {
+             "img": "https://mini-io-api.texnomart.uz/catalog/special-category/8/6ef5abae-97f4-4d1f-9b8d-462b3b45d0d9.svg",
+             "title": "Кондиционеры"
+         },
+         {
+            "img": "https://mini-io-api.texnomart.uz/catalog/special-category/5/aea82075-5f5c-45fa-bac8-ad86b97bfe27.svg",
+            "title": "Пылесосы"
+         },
+         {
+            "img": "https://mini-io-api.texnomart.uz/catalog/special-category/4/08aa7c9c-6fc4-4dd9-af79-669803f79f9a.svg",
+            "title": "Смартфоны"
+         },
+         {
+            "img": "https://mini-io-api.texnomart.uz/catalog/special-category/6/b4f03ab9-a48d-4bd0-9e27-8bb8d5838036.svg",
+            "title": "Планшеты"
+         },
+         {
+            "img": "https://mini-io-api.texnomart.uz/catalog/special-category/7/43e4d667-f026-484c-80a5-eebc1b128988.svg",
+            "title": "Холодильники"
+         },
+         {
+            "img": "https://mini-io-api.texnomart.uz/catalog/special-category/9/022df0cb-6560-4735-af2b-925057321911.svg",
+            "title": "Телевизоры"
+         },
+         {
+            "img": "https://mini-io-api.texnomart.uz/catalog/special-category/8/6ef5abae-97f4-4d1f-9b8d-462b3b45d0d9.svg",
+            "title": "Фены"
+         }   
+        ]
+    }
+]

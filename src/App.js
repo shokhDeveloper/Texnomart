@@ -22,6 +22,33 @@ function App() {
       handleLoader()
     }
   },[loader])
+  const handleClick = (event) => {
+    if(event.target.matches(".catalot_btn") || event.target.matches(".catalog-item") ){
+      return false
+    }else {
+      dispatch(Action.setCatalog(false))
+    }
+  }
+  useEffect(() => {
+    window.addEventListener("click", handleClick)
+    return () => window.removeEventListener("click", handleClick)
+  },[])
+  const handleScroll = () => {
+    if (window.scrollY > 500) {
+      dispatch(Action.setTopDisplay(true));
+    } else {
+      dispatch(Action.setTopDisplay(false));
+    }
+    if(window.scrollY > (Math.round(214.39999389648438)-1)){
+      dispatch(Action.setHeaderActive(true))
+    }else{
+      dispatch(Action.setHeaderActive(false))
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   i18n
   .use(initReactI18next)
   .init({

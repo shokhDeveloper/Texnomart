@@ -1,0 +1,125 @@
+[
+    {
+        "cards":[
+            {
+                "name": "Кондиционер Haier AS12TB3HAA-W/1U12MR5EAA",
+                "img": "https://imgpng.ru/d/air_conditioner_PNG30.png",
+                "notprice": "5 213 333",
+                "price": "4 692 000",
+                "id": 1
+            },
+            {
+                "name": "Кондиционер AUX ASW H12A4/QER1",
+                "img": "https://imgpng.ru/d/air_conditioner_PNG11.png",
+                "notprice": "5 213 333",
+                "price": "4 692 000",
+                "id": 2
+            },
+            {
+                "name": "Кондиционер MDV MDSAF-09HRN8/MDOAF-09HN8",
+                "img": "https://imgpng.ru/d/air_conditioner_PNG30.png",
+                "notprice": "5 213 333",
+                "price": "4 692 000",
+                "id": 3
+            },
+            {
+                "name": "Кондиционер Haier AS12TB3HAA-W/1U12MR5EAA",
+                "img": "https://imgpng.ru/d/air_conditioner_PNG30.png",
+                "notprice": "5 213 333",
+                "price": "4 692 000",
+                "id": 4
+            },
+            {
+                "name": "Кондиционер AUX ASW H12A4/QER1",
+                "img": "https://imgpng.ru/d/air_conditioner_PNG11.png",
+                "notprice": "5 213 333",
+                "price": "4 692 000",
+                "id": 5
+            },
+            {
+                "name": "Кондиционер MDV MDSAF-09HRN8/MDOAF-09HN8",
+                "img": "https://imgpng.ru/d/air_conditioner_PNG11.png",
+                "notprice": "5 213 333",
+                "price": "4 692 000",
+                "id": 6
+            }
+        ]
+    },
+    {
+        "cards": [
+            {
+                "name": "Мини печь Itimat 60 DFL Premium",
+                "img": "https://mini-io-api.texnomart.uz/catalog/product/3…/0bcbc2ad-53ed-44c0-8375-83b9d49f2132-medium.webp",
+                "id": 7
+            }
+        ]
+    },
+    {
+        "cards": [
+            {
+                "name": "Wi-Fi Роутер Tenda AC5",
+                "img": "https://mini-io-api.texnomart.uz/catalog/product/8…9/000e8933-09e4-4f88-b3ef-f0a8b3345f7f-medium.jpg",
+                "price": "406 000",
+                "id": 8
+            },
+            {
+                "name": "Сичқонча симсиз 2E MF210 WL Қора",
+                "img": "https://mini-io-api.texnomart.uz/catalog/product/9…4/a1e14f1a-4164-49dc-9535-425544b48296-medium.jpg",
+                "price": "406 000",
+                "id": 9
+            },
+            {
+                "name": "Wi-Fi Роутер Tenda AC5",
+                "img": "https://mini-io-api.texnomart.uz/catalog/product/8…9/000e8933-09e4-4f88-b3ef-f0a8b3345f7f-medium.jpg",
+                "price": "406 000",
+                "id": 10
+            },
+            {
+                "name": "Сичқонча симсиз 2E MF210 WL Қора",
+                "img": "https://mini-io-api.texnomart.uz/catalog/product/9…4/a1e14f1a-4164-49dc-9535-425544b48296-medium.jpg",
+                "price": "406 000",
+                "id": 11
+            },
+            {
+                "name": "Wi-Fi Роутер Tenda AC5",
+                "img": "https://mini-io-api.texnomart.uz/catalog/product/8…9/000e8933-09e4-4f88-b3ef-f0a8b3345f7f-medium.jpg",
+                "price": "406 000",
+                "id": 12
+            }
+        ]
+    },
+    {
+        "cards": [
+            {
+                "name": "Wi-Fi Роутер Tenda AC5",
+                "img": "https://mini-io-api.texnomart.uz/catalog/product/8…9/000e8933-09e4-4f88-b3ef-f0a8b3345f7f-medium.jpg",
+                "price": "406 000",
+                "id": 13
+            },
+            {
+                "name": "Сичқонча симсиз 2E MF210 WL Қора",
+                "img": "https://mini-io-api.texnomart.uz/catalog/product/9…4/a1e14f1a-4164-49dc-9535-425544b48296-medium.jpg",
+                "price": "406 000",
+                "id": 14
+            },
+            {
+                "name": "Wi-Fi Роутер Tenda AC5",
+                "img": "https://mini-io-api.texnomart.uz/catalog/product/8…9/000e8933-09e4-4f88-b3ef-f0a8b3345f7f-medium.jpg",
+                "price": "406 000",
+                "id": 15
+            },
+            {
+                "name": "Сичқонча симсиз 2E MF210 WL Қора",
+                "img": "https://mini-io-api.texnomart.uz/catalog/product/9…4/a1e14f1a-4164-49dc-9535-425544b48296-medium.jpg",
+                "price": "406 000",
+                "id": 16
+            },
+            {
+                "name": "Wi-Fi Роутер Tenda AC5",
+                "img": "https://mini-io-api.texnomart.uz/catalog/product/8…9/000e8933-09e4-4f88-b3ef-f0a8b3345f7f-medium.jpg",
+                "price": "406 000",
+                "id": 17
+            }
+        ]
+    }
+]

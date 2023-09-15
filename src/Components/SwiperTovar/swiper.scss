@@ -1,0 +1,31 @@
+@use "../../Settings/scss/functions.scss";
+@use "../../Settings/scss/variebles.scss";
+.swiper-tovars-box{
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.swiper-tovar-header{
+    @include functions.flex(flex-end);
+    width: 100%;
+}
+.swiper-tovar-box{
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;   
+    border: 1px solid variebles.$border;
+    min-height: 350px;
+    @include functions.flex(space-between);
+    flex-direction: column;
+}
+.swiper-tovar-box:not(:last-child), .swiper-tovar-box:not(:nth-child(4)){
+    margin-right:  30px !important;    
+}
+.swiper-tovar-box .swiper-shopping-box{
+    @include functions.flex(space-between);
+}
+.swiper-tovar-box .swiper-tovar-body h4{
+    // letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: 100;
+    font-size: 14px;
+}

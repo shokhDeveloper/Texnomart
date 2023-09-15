@@ -6,7 +6,7 @@ import { Loader } from "./Components";
 import i18n from "i18next";
 import {initReactI18next} from "react-i18next"
 function App() {
-  const {loader} = useSelector((state) => state.Reducer)
+  const {loader, token} = useSelector((state) => state.Reducer)
   const dispatch = useDispatch()
   
   const handleLoader = () => {
@@ -18,10 +18,15 @@ function App() {
     }
   }
   useEffect(() => {
-    if(loader === true){
+    if(loader || token){
+      if(token){
+        dispatch(Action.setModalSignFirebase(false))
+        dispatch(Action.signModalForFirebaseLogin(false))
+      }
       handleLoader()
     }
-  },[loader])
+  },[loader, token])
+  
   const handleClick = (event) => {
     if(event.target.matches(".catalot_btn") || event.target.matches(".catalog-item") ){
       return false

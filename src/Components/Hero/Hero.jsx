@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { HeaderAnimation } from "./HeroAnimation";
 import { Carousel } from "../Carousel";
 import { Modal, ModalLogin, ModalRegister } from "../Modal";
@@ -17,8 +17,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { NavLink, Route, Routes, useNavigate } from "react-router-dom";
 import { Action } from "../../Settings";
 import { Shopping } from "../../Shopping/Shopping";
+import { SwiperTovar } from "../SwiperTovar/SwiperTovar";
+import { FirebaseForm } from "../Modal/FirebaseForm";
 export const Hero = () => {
-  const {sign_modal, shoppingModal} = useSelector((state) => state.Reducer)
+  const {sign_modal, shoppingModal, signModalFirebase, signModalForFirebaseLogin} = useSelector((state) => state.Reducer)
   const [swiper, setSwiper] = useState(null)
   const navigate = useNavigate()
   const dispatch = useDispatch()
@@ -34,6 +36,9 @@ export const Hero = () => {
     }
   }
   const carousel_array = [...Array(2).keys()]
+  useEffect(() => {
+    console.log(signModalFirebase, signModalForFirebaseLogin)
+  }, [signModalFirebase, signModalForFirebaseLogin])
   return (
     <div className="hero">
       <div className="container">
@@ -93,6 +98,27 @@ export const Hero = () => {
         <Modal type={"shoppingCart"} modal={shoppingModal}>
               <Shopping/>
         </Modal>
+        <Modal modal={signModalFirebase} type={"sign"}>
+        <div className="modal-header">
+            <h2>Passwordigizni kiriting</h2>
+            <button className="border-transparent" onClick={() => {
+              navigate("/")
+              dispatch(Action.setModalSignFirebase(false))} }>&times;</button>
+          </div>
+        <FirebaseForm type={"register"}/>
+      </Modal>
+      <Modal modal={signModalForFirebaseLogin} type={"sign"}>
+        <div className="modal-header">
+            <h2>Passwordigizni kiriting</h2>
+            <button className="border-transparent" onClick={() => {
+              navigate("/")
+              dispatch(Action.signModalForFirebaseLogin(false))}}>&times;</button>
+          </div>
+        <FirebaseForm type={"login"}/>
+      </Modal>
+      <Modal/>
+        <SwiperTovar id={0}/>
+      
       </div>
     </div>
   );

@@ -8,9 +8,13 @@ import { useMutation } from "react-query";
 import axios from "axios";
 import { useEffect } from "react";
 import { useNavigate } from "react-router";
+import {signInWithPopup} from "firebase/auth"
+import {GoogleProvider, auth} from "../../Settings/firebase/firebase.config"
+import { Modal } from "./Modal";
+import { FirebaseForm } from "./FirebaseForm";
 export const ModalRegister = () => {
   const date = new Date()  
-  const {focus_input, token} = useSelector(state => state.Reducer)
+  const {focus_input, token, userFirebase, signModalFirebase} = useSelector(state => state.Reducer)
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const {mutate} = useMutation((data) => {
@@ -54,7 +58,23 @@ export const ModalRegister = () => {
             navigate("/")
         }, 1500)
     }
-  },[token])
+  },[token])  
+  const handleGoogle = () => {
+    signInWithPopup(auth, GoogleProvider).then(response => {
+      dispatch(Action.setUserFirebase({
+        name: response?.user?.displayName?.split(" ")[0],
+        lastname: response?.user?.displayName?.split(" ")[1],
+        email: response?.user?.email,
+        password: null
+      }))   
+    }).catch(error => console.log(error)) 
+  }
+  useEffect(() => {
+    if(userFirebase?.name){ 
+        dispatch(Action.setModalSign(false))
+        dispatch(Action.setModalSignFirebase(true))
+      }
+  },[userFirebase])
   watch()
   return (
     <div className="modal-form-box">
@@ -109,7 +129,7 @@ export const ModalRegister = () => {
           <label style={{color: errors?.password ? "crimson": "#e2ad00"}} htmlFor="username-password" className={`${watch()?.password?.length || focus_input?.password ? "active-input": ""}`}>{errors?.password?  errors?.password?.message: "Password"}</label>
         </div>
         <Button disabled={!isValid} className="modal-button"  type="yellow">Submit</Button>
-        <GoogleBtn type="button" style={{backgroundImage: `url(${Google})`}}>Goolge orqali kirish</GoogleBtn>
+        <GoogleBtn onClick={handleGoogle} type="button" style={{backgroundImage: `url(${Google})`}}>Goolge orqali kirish</GoogleBtn>
       </form>
     </div>
   );

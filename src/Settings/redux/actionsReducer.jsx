@@ -5,6 +5,7 @@ const initialState = {
     token: getItem("token") ? getItem("token") : null,
     user: getItem("user") ? JSON.parse(getItem("user")) : null,
     loader: getItem("loader") ? false : true,
+    tovarLocals: getItem("tovarLocals") ? JSON.parse(getItem("tovarLocals")): [],
     swiperHeroArray: [],
     position: {
       latitude: null,
@@ -24,7 +25,28 @@ const initialState = {
       email: false,
       password: false
     },
-    shoppingModal: false
+    shoppingModal: false,
+    userFirebase: {
+      name: null,
+      lastname: null,
+      email: null,
+      password: null
+    },
+    signModalFirebase: false,
+    fireBaseForm: {
+      password: false
+    },
+    firebaseLogin: {
+      email: false,
+      password: false
+    },
+    loginError: false,
+    loginErrorText: "Bunday user server da mavjud emas !",
+    loginUser:{
+      email: null,
+      password: null 
+    },
+    signModalForFirebaseLogin: false
 }
 export const slice = createSlice({
   name: "texnomart",
@@ -94,6 +116,48 @@ export const slice = createSlice({
     },
     setShoppingModal(state, action){
       state.shoppingModal = action.payload
+    },
+    setLike(state, action){
+      if(state.tovarLocals.length){
+        if(!state.tovarLocals?.some(item => item.id === action.payload.id)){
+          state.tovarLocals.push(action.payload)
+          setItem("tovarLocals", state.tovarLocals)
+        }
+      }else{
+        state.tovarLocals.push(action.payload)
+        setItem("tovarLocals", state.tovarLocals)
+      }
+    },
+    setNotLike(state, action){
+      state.tovarLocals = action.payload
+      setItem("tovarLocals", state.tovarLocals)
+    },
+    setUserFirebase(state, action){
+      state.userFirebase = action.payload
+    },
+    setModalSignFirebase(state, action){
+     state.signModalFirebase = action.payload  
+    },
+    setFormFirebasePasswordChange(state, action){
+      state.fireBaseForm = {...action.payload}
+    },
+    setUserFirebasePassword(state, action){
+      state.userFirebase = action.payload
+    },
+    setFireBaseLogin(state, action){
+      state.firebaseLogin = action.payload
+    },
+    setUserLoginError(state, action){
+      state.loginError = action.payload
+    },
+    setLoginUser(state, action){
+      state.loginUser = action.payload
+    },
+    signModalForFirebaseLogin(state, action){
+      state.signModalForFirebaseLogin = action.payload
+    },
+    setUserFirebaseLogin(state, action){
+      state.loginUser = action.payload
     }
     }
 })

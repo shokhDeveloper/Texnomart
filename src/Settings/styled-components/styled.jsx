@@ -30,9 +30,10 @@ export const GlobalStyle = createGlobalStyle`
 export const Button = styled.button`
     padding: 0.5rem 1rem;
     background: ${({type}) => type ===  "yellow" ? "#FBC100": type === "black" ? "#000": type === "light"? "#fff" : "transparent" };
-    border: ${({type}) => type === "yellow" ? "1px solid transparent": "1px solid #FBC100"} ;
+    border: ${({type}) => type === "yellow" ? "1px solid transparent": type === "light" ?  "2px solid #FBC100": "1px solid #FBC100"} ;
     color: ${({type}) => type === "black" ? "#fcc200" :"#333333" } ;
     font-size: ${({type}) => type === "yellow" ? "17px": "20px"};
+    border-radius: ${({type}) => type === "light" ? "10px": "0px"};
 `
 export const GoogleBtn = styled.button`
     padding: 0.7rem 2.2rem;
@@ -43,6 +44,17 @@ export const GoogleBtn = styled.button`
     margin-top: 1rem;
     letter-spacing: 1px;
     padding-left: 0.5rem;
-    border: 1px solid #9e9d9d;
+    border: 1px solid #9c9999;
     border-radius: 4px;
+    
+`
+export const Like = styled.input.attrs({
+    type: "checkbox"
+})`
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    appearance: none;
 `

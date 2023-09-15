@@ -2,11 +2,18 @@
   "users": [
     {
       "email": "shohijahonmusinkulov@gmail.com",
-      "password": "$2a$10$msB9Mg6HrFJ62wSnGsLouORVpCA5Yxr1hWZehWtBW3tqZbWjfIY1W",
+      "password": "$2a$10$LTT3hHJ/KlPOkIfMWX1axe7ttPwq6tP6..76H.em.iUvar9BPSP7S",
       "name": "Shohijahon",
       "lastname": "Musinkulov",
-      "date": "15.09.2023, 10:40:18",
       "id": 1
+    },
+    {
+      "email": "cristianoronaldo@gmail.com",
+      "password": "$2a$10$x8up80X05bP17oOjg6jo/uPsbZn07KxMd8MfKofRKOtwL0BlfiJbO",
+      "name": "Cristiano",
+      "lastname": "Ronaldo",
+      "date": "15.09.2023, 23:07:05 Register at its user ",
+      "id": 2
     }
   ],
   "posts": []

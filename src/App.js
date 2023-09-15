@@ -1,5 +1,5 @@
 import { RouterProvider } from "react-router";
-import { Action, GlobalStyle, getItem, route, setItem } from "./Settings";
+import { Action, GlobalStyle, getItem, removeItem, route, setItem } from "./Settings";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { Loader } from "./Components";
@@ -10,7 +10,7 @@ function App() {
   const dispatch = useDispatch()
   
   const handleLoader = () => {
-    if(getItem("loader") === null && loader ){
+    if(getItem("loader") === null || loader ){
       setTimeout(() => {
         dispatch(Action.setLoader(false))
         setItem("loader", "loader-end")
@@ -18,14 +18,10 @@ function App() {
     }
   }
   useEffect(() => {
-    if(loader || token){
-      if(token){
-        dispatch(Action.setModalSignFirebase(false))
-        dispatch(Action.signModalForFirebaseLogin(false))
-      }
+    if(loader){
       handleLoader()
     }
-  },[loader, token])
+  },[loader])
   
   const handleClick = (event) => {
     if(event.target.matches(".catalot_btn") || event.target.matches(".catalog-item") ){

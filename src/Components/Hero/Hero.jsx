@@ -19,6 +19,7 @@ import { Action } from "../../Settings";
 import { Shopping } from "../../Shopping/Shopping";
 import { SwiperTovar } from "../SwiperTovar/SwiperTovar";
 import { FirebaseForm } from "../Modal/FirebaseForm";
+import { FirebaseFormLogin } from "../Modal/FirebaseFormLogin";
 export const Hero = () => {
   const {sign_modal, shoppingModal, signModalFirebase, signModalForFirebaseLogin} = useSelector((state) => state.Reducer)
   const [swiper, setSwiper] = useState(null)
@@ -105,7 +106,7 @@ export const Hero = () => {
               navigate("/")
               dispatch(Action.setModalSignFirebase(false))} }>&times;</button>
           </div>
-        <FirebaseForm type={"register"}/>
+        <FirebaseForm/>
       </Modal>
       <Modal modal={signModalForFirebaseLogin} type={"sign"}>
         <div className="modal-header">
@@ -114,7 +115,7 @@ export const Hero = () => {
               navigate("/")
               dispatch(Action.signModalForFirebaseLogin(false))}}>&times;</button>
           </div>
-        <FirebaseForm type={"login"}/>
+          <FirebaseFormLogin/>
       </Modal>
       <Modal/>
         <SwiperTovar id={0}/>

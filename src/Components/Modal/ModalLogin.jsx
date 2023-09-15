@@ -84,10 +84,11 @@ export const ModalLogin = () => {
   }
   useEffect(() => {
     if(loginUser?.email){
-      dispatch(Action.setModalSign(false))
-      dispatch(Action.signModalForFirebaseLogin(true))
+      dispatch(Action.setModalSign(false));
+      dispatch(Action.signModalForFirebaseLogin(true));
     }
   },[loginUser])
+  
   watch();
   return (
     <>
@@ -160,7 +161,7 @@ export const ModalLogin = () => {
         <GoogleBtn
           onClick={handleGoogle}
           className="border-transparent btn-login"
-          style={{ backgroundImage: `url(${Google})` }}
+          style={{ backgroundImage: `url(${Google})`, border: "1px solid #4f4c4c" }}
           type="button"
           >
           Google orqali login qiling

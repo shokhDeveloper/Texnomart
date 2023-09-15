@@ -1,5 +1,5 @@
 import Google from "../../Settings/assets/images/Google.png"
-import { Action, Button, GoogleBtn, removeItem, setItem } from "../../Settings";
+import { Action, Button, GoogleBtn, getItem, removeItem, setItem } from "../../Settings";
 import {useForm} from "react-hook-form"
 import * as Yup from "yup"
 import {yupResolver} from "@hookform/resolvers/yup"
@@ -24,7 +24,8 @@ export const ModalRegister = () => {
             if(accessToken){
                 dispatch(Action.setToken(accessToken))
                 dispatch(Action.setUser(user))
-            }
+                removeItem("loader")
+              }
         }
     })
   })
@@ -47,16 +48,18 @@ export const ModalRegister = () => {
   const onSubmit = (event) => {
     mutate({...event, date: date.toLocaleString().toString().concat(" Register at its user ")})
   }
+  const handleLoaderEnd = () => {
+    setTimeout(() => {
+      setItem("loader", "loader-end")
+      dispatch(Action.setLoader(false))
+    }, 1500)  
+  }
   useEffect(() => {
-    if(token){
+    if(token && getItem("loader") === null){
         dispatch(Action.setModalSign(false))
         removeItem("loader")
         dispatch(Action.setLoader(true))
-        setTimeout(() => {
-            setItem("loader", "loader-end")
-            dispatch(Action.setLoader(false))
-            navigate("/")
-        }, 1500)
+        handleLoaderEnd()
     }
   },[token])  
   const handleGoogle = () => {
@@ -73,6 +76,7 @@ export const ModalRegister = () => {
     if(userFirebase?.name){ 
         dispatch(Action.setModalSign(false))
         dispatch(Action.setModalSignFirebase(true))
+      console.log(userFirebase)
       }
   },[userFirebase])
   watch()

@@ -97,7 +97,7 @@ export const Hero = () => {
             </div>
         </Modal>
         <Modal type={"shoppingCart"} modal={shoppingModal}>
-              <Shopping/>
+            <Shopping/>
         </Modal>
         <Modal modal={signModalFirebase} type={"sign"}>
         <div className="modal-header">
@@ -117,9 +117,10 @@ export const Hero = () => {
           </div>
           <FirebaseFormLogin/>
       </Modal>
-      <Modal/>
+
         <SwiperTovar id={0}/>
-      
+        
+        <SwiperTovar id={1}/>
       </div>
     </div>
   );

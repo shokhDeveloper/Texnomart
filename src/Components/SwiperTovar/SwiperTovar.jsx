@@ -11,8 +11,13 @@ import { Like } from "../Like";
 import { Button } from "../../Settings";
 import Shop from "../../Settings/assets/images/shop.svg"
 import { useState } from "react";
+import { useCart } from "react-use-cart";
 export const SwiperTovar = ({id}) => {
+    const {addItem} = useCart()
     const [swiper, setSwiper] = useState(null)
+    const handleShop = (item) => {
+        addItem(item)
+    }
     const handleClick = (event) => {
         switch(event.target.id){
             case "next":{
@@ -25,6 +30,14 @@ export const SwiperTovar = ({id}) => {
         }
     }
     return(
+        <>
+        <div className="swiper-title-box">
+        {id === 0 ? (
+            <h4>Новинка</h4>
+        ): id === 1 ? (
+            <h4>Хит продаж</h4>
+        ): false}
+        </div>
         <Swiper className="swiper-tovars-box"
         modules={[Navigation, Pagination,  A11y]}
         spaceBetween={50}
@@ -54,7 +67,7 @@ export const SwiperTovar = ({id}) => {
                             )}
                             <div className="swiper-shopping-box">
                             <p>{item.price} so'm</p>
-                            <Button type="light"  > <img src={Shop} alt="" /></Button>
+                            <Button onClick={ () => handleShop(item)} type="light"  > <img src={Shop} alt="" /></Button>
                             </div>
                         </div>
                     </div>
@@ -63,5 +76,6 @@ export const SwiperTovar = ({id}) => {
         })}
             <button id="prev" onClick={handleClick} className="swiper-button-prev border-transparent"/>
       </Swiper>
+        </>
     )
 }

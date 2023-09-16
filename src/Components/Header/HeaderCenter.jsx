@@ -5,8 +5,10 @@ import Mikrofon from "../../Settings/assets/images/voice.svg";
 import Search from "../../Settings/assets/images/search.svg";
 import { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useCart } from "react-use-cart";
 export const HeaderCenter = () => {
   const searchRef = useRef();
+  const {items} = useCart()
   const {headerActive, token, user} = useSelector((state) => state.Reducer)  
   const dispatch = useDispatch()
   const navigate = useNavigate()
@@ -94,6 +96,9 @@ export const HeaderCenter = () => {
               <li onClick={() => {
                 dispatch(Action.setShoppingModal(true))
               }} className="headerCenter-item">
+                {items?.length ? (
+                  <span className="shopping-items-count">{items?.length}</span>
+                ): null}
                 <NavLink className={"headerCenter-link"}>Savatcha</NavLink>
               </li>
             </ul>

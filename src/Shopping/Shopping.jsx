@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { useCart } from "react-use-cart"
 import { Action, Button } from "../Settings"
 import { useNavigate } from "react-router"
+import { ShoppingTovar } from "./ShoppingTovar"
 
 export const Shopping = () => {
     const {addItem, items} = useCart()
@@ -26,7 +27,9 @@ export const Shopping = () => {
                     <h4>В корзине пока <br /> ничего нет</h4>
                     <Button onClick={() => dispatch(Action.setShoppingModal(false))} type="light" style={{textTransform: "inherit", borderRadius: "6px", "border": "2px solid #FBC100"}}>Перейти к покупкам</Button>
                 </div>
-                ): "Helo"}
+                ): (
+                    <ShoppingTovar/>
+                )}
                 </div>
              </div>
         </>

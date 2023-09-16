@@ -1,0 +1,112 @@
+@use "../Settings/scss/variebles.scss";
+@use "../Settings/scss/functions.scss";
+.shoppingTovar-items{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(1, auto);
+    grid-template-columns: 65% 25% ;
+    justify-content: space-between;
+}
+.shoppingTovar-item:not(:first-child){
+    padding-left: 20px;
+}
+.shoppingTovar-item:nth-child(1) .shoppingTovar-item-header{
+    @include functions.flex(space-between);
+    border-bottom: 1px solid variebles.$border;
+    // padding-bottom: 0.5rem;
+}
+.shoppingTovar-item:nth-child(1) .shoppingTovar-item-header button{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.shoppingTovar-items .shoppingTovar-item-header input[type="checkbox"]{
+    width: 30px;
+    height: 30px;
+    accent-color: yellow;
+    color: #fff;
+}
+.shoppingTovar-item-header button{
+    background: transparent !important;
+    color: #767676;    
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.shoppingTovar-item-alls{
+    @include functions.flex(center)
+}
+.shoppingTovar-item-alls span{
+    font-size: 14px;
+    padding-left: 1rem;
+}
+.shoppingTovar-item-list{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.shoppingTovar-item-list .shoppingTovar-item-li{
+    width: 100%;
+    @include functions.flex(space-between);
+    margin-top: 1rem;
+}
+.shoppingTovar-item-li input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    accent-color: yellow;
+    color: #fff;
+}
+.shoppingTovar-item-li img{
+    width: 40%;
+    height: 110px;
+    object-fit: contain;
+}
+.shoppingTovar-item-list .shoppingTovar-item-li div{
+    @include functions.flex(space-between);
+    flex-basis: 40%;
+}
+.shoppingTovar-item-list .shoppingTovar-item-li div:nth-child(2){
+    flex-basis: 45%;
+}
+.shoppingTovar-item-li .shoppingTovar-counts-elements{
+    height: 40px;
+    background: #767676;
+    border-radius: 20px;
+    padding: 0px 5px;
+    margin: 0;
+    color: #fff;
+    flex-basis: 30% !important;
+}
+.shoppingTovar-item-li .shoppingTovar-counts-elements button{
+    padding: 0 0.3rem;
+    margin: 0;
+    font-size: 22px;
+    background: transparent;
+    color: #fff;
+}
+.shoppingTovar-item-li .shoppingTovar-settings-elements{
+    @include functions.flex(center);
+    flex-direction: column;
+    min-height: 70px;    
+    flex-basis: 10% !important;
+}
+.shoppingTovar-item-li .shoppingTovar-settings-elements button:nth-child(2){
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0.7rem;
+    color: green;
+}
+.shoppingTovar-item:nth-child(2){
+    border: 1px solid variebles.$border;
+    border-radius: 10px;
+    padding: 10px;
+}
+.shoppingTovar-item:nth-child(2) h4{
+    margin: 0;
+}
+.shoppingTovar-title-box{
+    width: 100%;
+    text-align: start;
+}
+.shoppingTovar-title-box h4{
+    font-size: 20px;
+}

@@ -1,6 +1,10 @@
 import { createGlobalStyle, styled } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+    ::-webkit-scrollbar{
+        display: none;
+        
+    }
     *{
         box-sizing: border-box;
         scroll-behavior: smooth;

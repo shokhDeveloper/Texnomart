@@ -9,15 +9,18 @@ export const Shopping = () => {
     const {shoppingModal} = useSelector((state) => state.Reducer)
     const navigate = useNavigate()
     const dispatch = useDispatch()
-    const tovar = {
-        name: "Iphone 14 pro max",
-        price: 1200,
-    }
     return(
         <>
             <div className="modal-header">
                 <h3>Корзина</h3>
-                <button onClick={() => dispatch(Action.setShoppingModal(false))} className="border-transparent" >&times;</button>
+                <button onClick={() => {
+                    if(items?.length){
+                        dispatch(Action.setShoppingModal(false))
+                        window.location.reload()
+                    }else{
+                        dispatch(Action.setShoppingModal(false))
+                    }
+                }} className="border-transparent" >&times;</button>
              </div>              
              <div className="modal-body">
                 <div className="modal-body-box">

@@ -6,6 +6,7 @@
                 "img": "https://imgpng.ru/d/air_conditioner_PNG30.png",
                 "notprice": "5 213 333",
                 "price": "4 692 000",
+                "parentId": 0,
                 "id": 1
             },
             {
@@ -13,6 +14,7 @@
                 "img": "https://imgpng.ru/d/air_conditioner_PNG11.png",
                 "notprice": "5 213 333",
                 "price": "4 692 000",
+                "parentId": 0,
                 "id": 2
             },
             {
@@ -20,6 +22,7 @@
                 "img": "https://imgpng.ru/d/air_conditioner_PNG30.png",
                 "notprice": "5 213 333",
                 "price": "4 692 000",
+                "parentId": 0,
                 "id": 3
             },
             {
@@ -27,6 +30,7 @@
                 "img": "https://imgpng.ru/d/air_conditioner_PNG30.png",
                 "notprice": "5 213 333",
                 "price": "4 692 000",
+                "parentId": 0,
                 "id": 4
             },
             {
@@ -34,6 +38,7 @@
                 "img": "https://imgpng.ru/d/air_conditioner_PNG11.png",
                 "notprice": "5 213 333",
                 "price": "4 692 000",
+                "parentId": 0,
                 "id": 5
             },
             {
@@ -41,6 +46,7 @@
                 "img": "https://imgpng.ru/d/air_conditioner_PNG11.png",
                 "notprice": "5 213 333",
                 "price": "4 692 000",
+                "parentId": 0,
                 "id": 6
             }
         ]
@@ -51,49 +57,57 @@
                 "name": "Sumka",
                 "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaT5yzry2p4Tnk3X3LOnH0-zPVV8pikbmY-9cKOFLyQcjSnFgKD_HuNi__d-LI90eZvic&usqp=CAU",
                 "price": "1000",
+                "parentId": 1,
                 "id": 7
             },
             {
                 "name": "Sumka",
                 "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaT5yzry2p4Tnk3X3LOnH0-zPVV8pikbmY-9cKOFLyQcjSnFgKD_HuNi__d-LI90eZvic&usqp=CAU",
                 "price": "1000",
+                "parentId": 1,
                 "id": 8
             },
             {
                 "name": "Sumka",
                 "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaT5yzry2p4Tnk3X3LOnH0-zPVV8pikbmY-9cKOFLyQcjSnFgKD_HuNi__d-LI90eZvic&usqp=CAU",
                 "price": "1000",
-                "id": 7
+                "parentId": 1,
+                "id": 9
             },
             {
                 "name": "Sumka",
                 "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaT5yzry2p4Tnk3X3LOnH0-zPVV8pikbmY-9cKOFLyQcjSnFgKD_HuNi__d-LI90eZvic&usqp=CAU",
                 "price": "1000",
-                "id": 8
+                "parentId": 1,
+                "id": 10
             },
             {
                 "name": "Sumka",
                 "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaT5yzry2p4Tnk3X3LOnH0-zPVV8pikbmY-9cKOFLyQcjSnFgKD_HuNi__d-LI90eZvic&usqp=CAU",
                 "price": "1000",
-                "id": 7
+                "parentId": 1,
+                "id": 11
             },
             {
                 "name": "Sumka",
                 "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaT5yzry2p4Tnk3X3LOnH0-zPVV8pikbmY-9cKOFLyQcjSnFgKD_HuNi__d-LI90eZvic&usqp=CAU",
                 "price": "1000",
-                "id": 8
+                "parentId": 1,
+                "id": 12
             },
             {
                 "name": "Sumka",
                 "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaT5yzry2p4Tnk3X3LOnH0-zPVV8pikbmY-9cKOFLyQcjSnFgKD_HuNi__d-LI90eZvic&usqp=CAU",
                 "price": "1000",
-                "id": 7
+                "parentId": 1,
+                "id": 13
             },
             {
                 "name": "Sumka",
                 "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaT5yzry2p4Tnk3X3LOnH0-zPVV8pikbmY-9cKOFLyQcjSnFgKD_HuNi__d-LI90eZvic&usqp=CAU",
                 "price": "1000",
-                "id": 8
+                "parentId": 1,
+                "id": 14
             }
         ]
     },

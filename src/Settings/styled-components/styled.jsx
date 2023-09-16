@@ -3,7 +3,7 @@ import { createGlobalStyle, styled } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     ::-webkit-scrollbar{
         display: none;
-        
+
     }
     *{
         box-sizing: border-box;
@@ -33,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
 `
 export const Button = styled.button`
     padding: 0.5rem 1rem;
-    background: ${({type}) => type ===  "yellow" ? "#FBC100": type === "black" ? "#000": type === "light"? "#fff" : "transparent" };
+    background: ${({type}) => type ===  "yellow" ? "#FBC100": type === "black" ? "#333": type === "light"? "#fff" : "transparent" };
     border: ${({type}) => type === "yellow" ? "1px solid transparent": type === "light" ?  "2px solid #FBC100": "1px solid #FBC100"} ;
     color: ${({type}) => type === "black" ? "#fcc200" :"#333333" } ;
     font-size: ${({type}) => type === "yellow" ? "17px": "20px"};

@@ -46,7 +46,8 @@ const initialState = {
       email: null,
       password: null 
     },
-    signModalForFirebaseLogin: false
+    signModalForFirebaseLogin: false,
+    price_All: 0
 }
 export const slice = createSlice({
   name: "texnomart",
@@ -158,6 +159,9 @@ export const slice = createSlice({
     },
     setUserFirebaseLogin(state, action){
       state.loginUser = action.payload
+    },
+    setPriceAll(state, action ){
+      state.price_All = action.payload
     }
     }
 })

@@ -1,0 +1,40 @@
+@use "../../Settings/scss/functions.scss";
+.tovarLocals-items{
+    @include functions.flex(space-between);
+    flex-wrap: wrap;
+    list-style: none;
+}
+.tovar-item{
+    box-shadow: 0px 0px 10px 0px rgb(117, 116, 116);
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+}
+.tovar-name{
+    font-size: 20px;
+}
+.tovar-price{
+    font-size: 1rem;
+}
+.tovarLocals-error{
+    font-size: 25px;
+}
+.tovarLocals-box{
+    text-align: center;
+    width: 100%;
+}
+.tovarLocals-box h2{
+    font-size: 40px;
+}
+.tovarLocals-error-box{
+    width: 100%;
+    text-align: center;
+}
+.tovar-delete-button{
+    padding: 0.5rem;
+    background: crimson;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    border-radius: 10px;
+}

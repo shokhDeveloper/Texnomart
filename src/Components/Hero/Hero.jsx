@@ -121,6 +121,7 @@ export const Hero = () => {
         <SwiperTovar id={0}/>
         
         <SwiperTovar id={1}/>
+        <SwiperTovar id={2}/>
       </div>
     </div>
   );

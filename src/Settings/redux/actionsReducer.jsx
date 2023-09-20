@@ -47,7 +47,18 @@ const initialState = {
       password: null 
     },
     signModalForFirebaseLogin: false,
-    price_All: 0
+    price_All: 0,
+    countTovar: 0,
+    userProfile: [],
+    updateProfile: false,
+    userProfileData:{
+      name: false,
+      lastname: false,
+      email: false,
+      password: false
+    },
+    successUpdate: false,
+    successText: "Profile ma'lumotlari muvaffaqiyatli yangilandi hurmatli "
 }
 export const slice = createSlice({
   name: "texnomart",
@@ -162,6 +173,27 @@ export const slice = createSlice({
     },
     setPriceAll(state, action ){
       state.price_All = action.payload
+    },
+    setTovarAdd(state, action){
+      state.price_All += action.payload
+    },
+    setTovarTake(state, action){
+      state.price_All -= action.payload
+    },
+    setCountTovar(state, action){
+      state.countTovar = action.payload
+    },
+    setUserProfile(state, action){
+      state.userProfile = action.payload
+    },
+    setUpdateProfile(state, action){
+      state.updateProfile = action.payload
+    },
+    setUpdateProfileData(state, action){
+      state.userProfileData = action.payload
+    },
+    setSuccessUpdateProfileData(state, action){
+      state.successUpdate = action.payload
     }
     }
 })

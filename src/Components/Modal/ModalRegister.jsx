@@ -92,7 +92,6 @@ export const ModalRegister = () => {
             type="text"
             name="name"
             id="name"
-
           />
           <label htmlFor={`username`} className={`${watch()?.name?.length || focus_input?.name  ? `active-input`:  "" }`} style={{color: errors?.name ? "crimson": "#e2ad00"}}>{errors?.name ?  errors?.name?.message: "Name"}</label>
         </div>

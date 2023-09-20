@@ -9,27 +9,48 @@ import { useDispatch, useSelector } from "react-redux";
 
 export const ShoppingTovar = () => {
   const {items, removeItem, updateItemQuantity, emptyCart} = useCart()
-  const {price_All} = useSelector((state) => state.Reducer)
+  const {price_All, countTovar} = useSelector((state) => state.Reducer)
   const dispatch = useDispatch()
+  
   const handleClick = (id) => {
     removeItem(id)
   }
+  const handleSumPrice = () => {
+    let price = 0  
+    items.map(item =>{
+      let number = (item.price.split(" ").join("")-0)
+      price += number
+      if(item.quantity > 1){
+        let quently = (item.quantity-1) * (item.price.split(" ").join("")-0)  
+        price += quently
+      }
+    })
+    dispatch(Action.setPriceAll(price))
+  }
   useEffect(() => {
-    let price = 0
     if(items?.length){
-        items?.map(item => {
-            let number = item.price.split(" ").join("")-0
-            price+= number
-        })
-        dispatch(Action.setPriceAll(price))
+      handleSumPrice()
     }
   },[items])
+  console.log(price_All)
+  const handleCountTovar = () => {
+    let count = items.length
+    items.map(item => {
+      if(item.quantity > 1){
+        count += (item.quantity - 1)
+      }
+    })
+    dispatch(Action.setCountTovar(count))
+  }
+  useEffect(() => {
+    handleCountTovar()
+  },[handleSumPrice])
   return (
     <div className="shoppingTovar-items">
       <div className="shoppingTovar-item">
         <div className="shoppingTovar-item-header">
           <div className="shoppingTovar-item-alls">
-            <input type="checkbox" className="shoppingTovar-check" />
+            <input checked type="checkbox" className="shoppingTovar-check" />
             <span>Выбрать все</span>
           </div>
           <button onClick={() => emptyCart()} className="delete-tovars border-transparent">
@@ -42,6 +63,7 @@ export const ShoppingTovar = () => {
               <li className="shoppingTovar-item-li">
                 <div>
                   <input
+                   checked
                     type="checkbox"
                     className="shoppingTovar-check-tovar"
                   />
@@ -51,9 +73,19 @@ export const ShoppingTovar = () => {
                 </div>
                 <div>
                   <div className="shoppingTovar-counts-elements">
-                    <button onClick={() => updateItemQuantity(item.id , item.quantity-1)}  className="border-transparent">-</button>
+                    <button onClick={() => {
+                      updateItemQuantity(item.id , item.quantity-1)
+
+                      handleSumPrice()
+                    }}  className="border-transparent">-</button>
                     <p>{item.quantity}</p>
-                    <button onClick={() => updateItemQuantity(item.id , item.quantity+1)} className="border-transparent">+</button>
+                    <button onClick={() => {
+                      console.log("ishladi")
+                      updateItemQuantity(item.id , item.quantity+1)
+                      let price = item.price.split(" ").join("")-0
+                      dispatch(Action.setTovarAdd(price))
+                    }
+                      } className="border-transparent">+</button>
                   </div>
                   <p>{item.price}</p>
                   <div className="shoppingTovar-settings-elements">
@@ -76,7 +108,7 @@ export const ShoppingTovar = () => {
             <h4>Итого</h4>
           </div>
           <div className="shoppingTovar-price">
-            <p>{items.length} товара на сумму </p>
+            <p>{countTovar} товара на сумму </p>
             <h4>{price_All} so'm</h4>
           </div>
             <Button type="yellow">Оформить покупку</Button>

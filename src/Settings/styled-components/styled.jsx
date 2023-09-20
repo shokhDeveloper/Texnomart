@@ -1,3 +1,4 @@
+import { type } from "@testing-library/user-event/dist/type";
 import { createGlobalStyle, styled } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`

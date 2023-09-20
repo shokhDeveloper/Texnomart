@@ -36,7 +36,9 @@ export const SwiperTovar = ({id}) => {
             <h4>Новинка</h4>
         ): id === 1 ? (
             <h4>Хит продаж</h4>
-        ): false}
+        ): id ===  2? (
+            <h4>Подборки </h4>
+        ):false}
         </div>
         <Swiper className="swiper-tovars-box"
         modules={[Navigation, Pagination,  A11y]}
@@ -54,8 +56,8 @@ export const SwiperTovar = ({id}) => {
                         <Like indexId={id} id={item.id}/>
                     </div>
                     <div className="swiper-tovar-body">
-                        <img src={item.img} width={200} height={item.id === 1 ? 50: item.id === 4 ? 52: 70} alt="Texnomart" />
-                        <h4>{item.name}</h4>    
+                        <img src={item.img} width={item?.width? item.width: 200} height={item.id === 1 ? 50: item.id === 4 ? 52: 70 || item?.height ? item.height: 100} alt="Texnomart" />
+                        <h4>{item.parentId !== 0 ?  item.name.split(" ").slice(0,1).join(" "): item.name}:</h4>    
                         <div className="swiper-tovar-kredit">
                             <p>382 075 so'mdan / 24 Oy</p>
                         </div>

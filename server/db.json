@@ -22,6 +22,14 @@
       "lastname": "Bahodirov",
       "date": "16.09.2023, 15:30:46 Register at its user ",
       "id": 3
+    },
+    {
+      "name": "Jurabek",
+      "lastname": "Rajabov",
+      "email": "jurabek@gmail.com",
+      "password": "$2a$10$5yVxGPTX.HYmWdGzPtvpp.e3mgItTdgWA4GMSN8oIBtPBTYGrNbQ6",
+      "date": "20.09.2023, 11:26:39",
+      "id": 4
     }
   ],
   "posts": []

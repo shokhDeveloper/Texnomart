@@ -31,7 +31,7 @@ export const Shopping = () => {
                     <Button onClick={() => dispatch(Action.setShoppingModal(false))} type="light" style={{textTransform: "inherit", borderRadius: "6px", "border": "2px solid #FBC100"}}>Перейти к покупкам</Button>
                 </div>
                 ): (
-                    <ShoppingTovar/>
+                    <ShoppingTovar/>    
                 )}
                 </div>
              </div>

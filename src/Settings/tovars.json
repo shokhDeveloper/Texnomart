@@ -115,28 +115,57 @@
         "cards": [
             {
                 "name": "Wi-Fi Роутер Tenda AC5",
-                "img": "https://mini-io-api.texnomart.uz/catalog/product/8…9/000e8933-09e4-4f88-b3ef-f0a8b3345f7f-medium.jpg",
-                "price": "406 000"
+                "img": "https://w7.pngwing.com/pngs/670/80/png-transparent-router-freifunk-internet-modem-bandwidth-archer-miscellaneous-electronics-local-area-network-thumbnail.png",
+                "price": "406 000",
+                "width": 200,
+                "height": 200,
+                "parentId": 2,
+                "id": 15
             },
             {
                 "name": "Сичқонча симсиз 2E MF210 WL Қора",
-                "img": "https://mini-io-api.texnomart.uz/catalog/product/9…4/a1e14f1a-4164-49dc-9535-425544b48296-medium.jpg",
-                "price": "406 000"
+                "img": "https://w7.pngwing.com/pngs/670/80/png-transparent-router-freifunk-internet-modem-bandwidth-archer-miscellaneous-electronics-local-area-network-thumbnail.png",
+                "price": "406 000",
+                "width": 200,
+                "height": 200,
+                "id": 16,
+                "parentId": 2
             },
             {
                 "name": "Wi-Fi Роутер Tenda AC5",
-                "img": "https://mini-io-api.texnomart.uz/catalog/product/8…9/000e8933-09e4-4f88-b3ef-f0a8b3345f7f-medium.jpg",
-                "price": "406 000"
+                "img": "https://w7.pngwing.com/pngs/670/80/png-transparent-router-freifunk-internet-modem-bandwidth-archer-miscellaneous-electronics-local-area-network-thumbnail.png",
+                "price": "406 000",
+                "width": 200,
+                "height": 200,
+                "id": 17,
+                "parentId": 2
             },
             {
                 "name": "Сичқонча симсиз 2E MF210 WL Қора",
-                "img": "https://mini-io-api.texnomart.uz/catalog/product/9…4/a1e14f1a-4164-49dc-9535-425544b48296-medium.jpg",
-                "price": "406 000"
+                "img": "https://w7.pngwing.com/pngs/670/80/png-transparent-router-freifunk-internet-modem-bandwidth-archer-miscellaneous-electronics-local-area-network-thumbnail.png",
+                "width": 200,
+                "height": 200,
+                "price": "406 000",
+                "id": 18,
+                "parentId": 2
             },
             {
                 "name": "Wi-Fi Роутер Tenda AC5",
-                "img": "https://mini-io-api.texnomart.uz/catalog/product/8…9/000e8933-09e4-4f88-b3ef-f0a8b3345f7f-medium.jpg",
-                "price": "406 000"
+                "img": "https://w7.pngwing.com/pngs/670/80/png-transparent-router-freifunk-internet-modem-bandwidth-archer-miscellaneous-electronics-local-area-network-thumbnail.png",
+                "width": 200,
+                "height": 200,
+                "price": "406 000",
+                "id": 19,
+                "parentId": 2
+            },
+            {
+                "name": "Wi-Fi Роутер Tenda AC5",
+                "img": "https://w7.pngwing.com/pngs/670/80/png-transparent-router-freifunk-internet-modem-bandwidth-archer-miscellaneous-electronics-local-area-network-thumbnail.png",
+                "width": 200,
+                "height": 200,
+                "price": "406 000",
+                "id": 20,
+                "parentId": 2
             }
         ]
     },

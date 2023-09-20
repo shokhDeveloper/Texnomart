@@ -8,9 +8,6 @@ import {initReactI18next} from "react-i18next"
 import { useCart } from "react-use-cart";
 function App() {
   const {loader, token} = useSelector((state) => state.Reducer)
-  const cart = useCart()
-  console.clear()
-  console.log(cart)
   const dispatch = useDispatch()
   
   const handleLoader = () => {

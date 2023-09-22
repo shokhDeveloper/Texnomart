@@ -24,22 +24,21 @@
     font-size: 18px;
 }
 
- .swiper-slide-blog{
-    border-radius: 10px;
-    width: 20%;
-}
-.swiper-slide-blog  .swiper-slide-blog-header{
+.continuation-item{
     border-radius: 10px;
 }
-.swiper-slide-blog .swiper-slide-blog-body{
+.continuation-item  .continuation-item-header{
+    border-radius: 10px;
+}
+.continuation-item .continuation-item-body{
     padding: 1rem;
     padding-bottom: 0;
 }
-.swiper-slide-blog .swiper-slide-blog-body p{
+.continuation-item .continuation-item-body p{
     font-size: 15px;
     color: grey;
 }
-.swiper-slide-blog .swiper-slide-blog-body h5{
+.continuation-item .continuation-item-body h5{
     font-size: 17px;
 }
 .swiper-blog .swiper-slide a{
@@ -52,4 +51,27 @@
     width: 100%;
     @include functions.flex(flex-end);
     margin-bottom: 1rem;
+}
+.continuation-page{
+    width: 100%;
+    display: grid;
+    grid-template: repeat(3, auto) / repeat(3, 25%);
+    grid-gap: 30px;
+    grid-auto-flow: row;
+    grid-auto-columns: 30%;
+    justify-content: space-between;
+}
+.continuation-page .continuation-item{
+    width: 100%;
+}
+.continuation-page .continuation-item .continuation-item-header a img{
+    width: 100%;
+    object-fit: contain;    
+}
+.continuation-page .continuation-item .continuation-item-body h5{
+    padding: 1rem 0rem;
+}
+.continuation-page .continuation-item .continuation-item-body *{
+    margin: 0;
+    padding: 0;
 }

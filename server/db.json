@@ -25,104 +25,105 @@
       "id": 4
     },
     {
-      "email": "shohijahonmusinkulov@gmail.com",
-      "password": "$2a$10$HFWJB8kDRAy9aleFUKV9ue69j/cvOkObFrCWbOJXCVP/MawH4M5X.",
-      "name": "Shohijahon",
-      "lastname": "Musinkulov",
+      "email": "sevinchmusinkulova@gmail.com",
+      "password": "$2a$10$JcRJQyrL8jOizdq/5OS5I.SFJSJZWuGrzDPAGa2wnFypcVnNz38uW",
+      "name": "Sevinch",
+      "lastname": "Musinkulova",
+      "date": "22.09.2023, 22:39:14 Register at its user ",
       "id": 5
     }
   ],
   "posts": [],
-  "continuation":[
+  "continuation": [
     {
-        "name": "Обзор Samsung Galaxy Z Fold 5",
-        "orginalName": "Z-FOLD",
-        "url": "https://texnomart.uz",
-        "img":  "../../Settings/assets/images/ZFOLD.png",
-        "price": "406 000",
-        "id": 26,
-        "parentId": 4
+      "name": "Обзор Samsung Galaxy Z Fold 5",
+      "orginalName": "Z-FOLD",
+      "url": "https://texnomart.uz",
+      "img": "../../Settings/assets/images/ZFOLD.png",
+      "price": "406 000",
+      "id": 26,
+      "parentId": 4
     },
     {
-        "name": "Обзор Apple  Iphone 14 pro max",
-        "orginalName": "IPHONE",
-        "url": "https://texnomart.uz",
-        "img": "",
-        "price": "406 000",
-        "id": 27,
-        "parentId": 4
+      "name": "Обзор Apple  Iphone 14 pro max",
+      "orginalName": "IPHONE",
+      "url": "https://texnomart.uz",
+      "img": "",
+      "price": "406 000",
+      "id": 27,
+      "parentId": 4
     },
     {
-        "name": "Обзор Samsung Galaxy Z Fold 5",
-        "orginalName": "Z-FOLD",
-        "url": "https://texnomart.uz",
-        "img": "",
-        "price": "406 000",
-        "id": 28,
-        "parentId": 4
+      "name": "Обзор Samsung Galaxy Z Fold 5",
+      "orginalName": "Z-FOLD",
+      "url": "https://texnomart.uz",
+      "img": "",
+      "price": "406 000",
+      "id": 28,
+      "parentId": 4
     },
     {
-        "name": "Обзор Apple  Iphone 14 pro max",
-        "orginalName": "IPHONE",
-        "url": "https://texnomart.uz",
-        "img": "null",
-        "price": "406 000",
-        "id": 29,
-        "parentId": 4
+      "name": "Обзор Apple  Iphone 14 pro max",
+      "orginalName": "IPHONE",
+      "url": "https://texnomart.uz",
+      "img": "null",
+      "price": "406 000",
+      "id": 29,
+      "parentId": 4
     },
     {
-        "name": "Обзор Samsung Galaxy Z Fold 5",
-        "orginalName": "Z-FOLD",
-        "url": "https://texnomart.uz",
-        "img": "null",
-        "price": "406 000",
-        "id": 30,
-        "parentId": 4
+      "name": "Обзор Samsung Galaxy Z Fold 5",
+      "orginalName": "Z-FOLD",
+      "url": "https://texnomart.uz",
+      "img": "null",
+      "price": "406 000",
+      "id": 30,
+      "parentId": 4
     },
     {
-        "name": "Обзор Apple  Iphone 14 pro max" ,
-        "orginalName": "IPHONE",
-        "url": "https://texnomart.uz",
-        "img": "null",
-        "price": "406 000",
-        "id": 31,
-        "parentId": 4
+      "name": "Обзор Apple  Iphone 14 pro max",
+      "orginalName": "IPHONE",
+      "url": "https://texnomart.uz",
+      "img": "null",
+      "price": "406 000",
+      "id": 31,
+      "parentId": 4
     },
     {
-        "name": "Обзор Samsung Galaxy Z Fold 5",
-        "orginalName": "Z-FOLD",
-        "url": "https://texnomart.uz",
-        "img": "null",
-        "price": "406 000",
-        "id": 32,
-        "parentId": 4
+      "name": "Обзор Samsung Galaxy Z Fold 5",
+      "orginalName": "Z-FOLD",
+      "url": "https://texnomart.uz",
+      "img": "null",
+      "price": "406 000",
+      "id": 32,
+      "parentId": 4
     },
     {
-        "name": "Обзор Apple  Iphone 14 pro max",
-        "orginalName": "IPHONE",
-        "url": "https://texnomart.uz",
-        "img": "null",
-        "price": "406 000",
-        "id": 33,
-        "parentId": 4
+      "name": "Обзор Apple  Iphone 14 pro max",
+      "orginalName": "IPHONE",
+      "url": "https://texnomart.uz",
+      "img": "null",
+      "price": "406 000",
+      "id": 33,
+      "parentId": 4
     },
     {
-        "name": "Обзор Samsung Galaxy Z Fold 5",
-        "orginalName": "Z-FOLD",
-        "url": "https://texnomart.uz",
-        "img": "",
-        "price": "406 000",
-        "id": 34,
-        "parentId": 4
+      "name": "Обзор Samsung Galaxy Z Fold 5",
+      "orginalName": "Z-FOLD",
+      "url": "https://texnomart.uz",
+      "img": "",
+      "price": "406 000",
+      "id": 34,
+      "parentId": 4
     },
     {
-        "name": "Обзор Apple  Iphone 14 pro max",
-        "orginalName": "IPHONE",
-        "url": "https://texnomart.uz",
-        "img": "",
-        "price": "406 000",
-        "id": 35,
-        "parentId": 4
+      "name": "Обзор Apple  Iphone 14 pro max",
+      "orginalName": "IPHONE",
+      "url": "https://texnomart.uz",
+      "img": "",
+      "price": "406 000",
+      "id": 35,
+      "parentId": 4
     }
-]
+  ]
 }

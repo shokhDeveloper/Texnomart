@@ -60,7 +60,8 @@ const initialState = {
     successUpdate: false,
     successText: "Profile ma'lumotlari muvaffaqiyatli yangilandi hurmatli ",
     podborkiActiveLink: "popular",
-    continuation: false
+    continuation: false,
+    continuationData: []
 }
 export const slice = createSlice({
   name: "texnomart",
@@ -202,6 +203,9 @@ export const slice = createSlice({
     },
     setContinuations(state, action){
       state.continuation = action.payload
+    },
+    setContinuationData(state, action){
+      state.continuationData = action.payload
     }
     }
 })

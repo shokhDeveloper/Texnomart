@@ -25,8 +25,7 @@ export const ProfileSettings = () => {
       );
       console.log("ishladi")
       const response = await request.data;
-      
-        console.log(response)
+    
         dispatch(Action.setUserProfile(response));
 
     }

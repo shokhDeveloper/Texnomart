@@ -5,5 +5,10 @@ export const Api = {
         return(
             axios.get(process.env.REACT_APP_SERVER + `/users/${id}`)
         )
+    },
+    getContinuation(){
+        return(
+            axios.get(process.env.REACT_APP_SERVER + "/continuation")
+        )
     }
 }

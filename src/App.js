@@ -23,7 +23,8 @@ function App() {
       handleLoader()
     }
   },[loader])
-  
+  let o = "color: crimson;"
+  console.log("%cWelcome to Teхnomart", "color:".concat(o, ";font-size:20px"))
   const handleClick = (event) => {
     if(event.target.matches(".catalot_btn") || event.target.matches(".catalog-item") ){
       return false

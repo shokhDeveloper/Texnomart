@@ -36,8 +36,6 @@ export const SwiperTovar = ({id}) => {
             <h4>Новинка</h4>
         ): id === 1 ? (
             <h4>Хит продаж</h4>
-        ): id ===  2? (
-            <h4>Подборки </h4>
         ):false}
         </div>
         <Swiper className="swiper-tovars-box"

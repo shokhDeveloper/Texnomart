@@ -20,6 +20,8 @@ import { Shopping } from "../../Shopping/Shopping";
 import { SwiperTovar } from "../SwiperTovar/SwiperTovar";
 import { FirebaseForm } from "../Modal/FirebaseForm";
 import { FirebaseFormLogin } from "../Modal/FirebaseFormLogin";
+import { Podborki } from "../Podborki";
+import { BlogCarousel } from "../Carousel/BlogCarousel";
 export const Hero = () => {
   const {sign_modal, shoppingModal, signModalFirebase, signModalForFirebaseLogin} = useSelector((state) => state.Reducer)
   const [swiper, setSwiper] = useState(null)
@@ -121,7 +123,9 @@ export const Hero = () => {
         <SwiperTovar id={0}/>
         
         <SwiperTovar id={1}/>
-        <SwiperTovar id={2}/>
+              
+        <Podborki/>
+        <BlogCarousel id={4}/>
       </div>
     </div>
   );

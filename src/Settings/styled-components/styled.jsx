@@ -4,11 +4,11 @@ import { createGlobalStyle, styled } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     ::-webkit-scrollbar{
         display: none;
-
     }
     *{
         box-sizing: border-box;
         scroll-behavior: smooth;
+        user-select: none;
     }
     body{
         margin: 0;
@@ -62,4 +62,12 @@ export const Like = styled.input.attrs({
     background-position: center;
     background-repeat: no-repeat;
     appearance: none;
+`
+export const SmallButton = styled.button`
+    padding: 0.5rem 1rem;
+    background: ${({type}) => type ===  "yellow" ? "#FBC100": "#fff" };
+    border: ${({type}) => type === "yellow" ? "1px solid transparent": "1px solid #FBC100"} ;
+    color: "#333333" ;
+    font-size: 14px;
+    border-radius: 30px;
 `

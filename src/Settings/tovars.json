@@ -173,29 +173,133 @@
         "cards": [
             {
                 "name": "Wi-Fi Роутер Tenda AC5",
-                "img": "https://mini-io-api.texnomart.uz/catalog/product/8…9/000e8933-09e4-4f88-b3ef-f0a8b3345f7f-medium.jpg",
-                "price": "406 000"
+                "img": "https://i.pinimg.com/originals/5b/95/b0/5b95b05d61d9d6c2e055f33b31c1d16d.jpg",
+                "price": "406 000",
+                "id": 21,
+                "parentId": 3
             },
             {
                 "name": "Сичқонча симсиз 2E MF210 WL Қора",
-                "img": "https://mini-io-api.texnomart.uz/catalog/product/9…4/a1e14f1a-4164-49dc-9535-425544b48296-medium.jpg",
-                "price": "406 000"
+                "img": "https://i.pinimg.com/originals/5b/95/b0/5b95b05d61d9d6c2e055f33b31c1d16d.jpg",
+                "price": "406 000",
+                "id": 22,
+                "parentId": 3
             },
             {
                 "name": "Wi-Fi Роутер Tenda AC5",
-                "img": "https://mini-io-api.texnomart.uz/catalog/product/8…9/000e8933-09e4-4f88-b3ef-f0a8b3345f7f-medium.jpg",
-                "price": "406 000"
+                "img": "https://i.pinimg.com/originals/5b/95/b0/5b95b05d61d9d6c2e055f33b31c1d16d.jpg",
+                "price": "406 000",
+                "id": 23,
+                "parentId": 3
            },
             {
                 "name": "Сичқонча симсиз 2E MF210 WL Қора",
-                "img": "https://mini-io-api.texnomart.uz/catalog/product/9…4/a1e14f1a-4164-49dc-9535-425544b48296-medium.jpg",
-                "price": "406 000"
+                "img": "https://i.pinimg.com/originals/5b/95/b0/5b95b05d61d9d6c2e055f33b31c1d16d.jpg",
+                "price": "406 000",
+                "id": 24,
+                "parentId": 3
             },
             {
                 "name": "Wi-Fi Роутер Tenda AC5",
-                "img": "https://mini-io-api.texnomart.uz/catalog/product/8…9/000e8933-09e4-4f88-b3ef-f0a8b3345f7f-medium.jpg",
-                "price": "406 000"
+                "img": "https://i.pinimg.com/originals/5b/95/b0/5b95b05d61d9d6c2e055f33b31c1d16d.jpg",
+                "price": "406 000",
+                "id": 25,
+                "parentId": 3
               }
+        ]
+    },
+    {
+        "cards":[
+            {
+                "name": "Обзор Samsung Galaxy Z Fold 5",
+                "orginalName": "Z-FOLD",
+                "url": "https://texnomart.uz",
+                "img":  "../../Settings/assets/images/ZFOLD.png",
+                "price": "406 000",
+                "id": 26,
+                "parentId": 4
+            },
+            {
+                "name": "Обзор Apple  Iphone 14 pro max",
+                "orginalName": "IPHONE",
+                "url": "https://texnomart.uz",
+                "img": "",
+                "price": "406 000",
+                "id": 27,
+                "parentId": 4
+            },
+            {
+                "name": "Обзор Samsung Galaxy Z Fold 5",
+                "orginalName": "Z-FOLD",
+                "url": "https://texnomart.uz",
+                "img": "",
+                "price": "406 000",
+                "id": 28,
+                "parentId": 4
+            },
+            {
+                "name": "Обзор Apple  Iphone 14 pro max",
+                "orginalName": "IPHONE",
+                "url": "https://texnomart.uz",
+                "img": "null",
+                "price": "406 000",
+                "id": 29,
+                "parentId": 4
+            },
+            {
+                "name": "Обзор Samsung Galaxy Z Fold 5",
+                "orginalName": "Z-FOLD",
+                "url": "https://texnomart.uz",
+                "img": "null",
+                "price": "406 000",
+                "id": 30,
+                "parentId": 4
+            },
+            {
+                "name": "Обзор Apple  Iphone 14 pro max" ,
+                "orginalName": "IPHONE",
+                "url": "https://texnomart.uz",
+                "img": "null",
+                "price": "406 000",
+                "id": 31,
+                "parentId": 4
+            },
+            {
+                "name": "Обзор Samsung Galaxy Z Fold 5",
+                "orginalName": "Z-FOLD",
+                "url": "https://texnomart.uz",
+                "img": "null",
+                "price": "406 000",
+                "id": 32,
+                "parentId": 4
+            },
+            {
+                "name": "Обзор Apple  Iphone 14 pro max",
+                "orginalName": "IPHONE",
+                "url": "https://texnomart.uz",
+                "img": "null",
+                "price": "406 000",
+                "id": 33,
+                "parentId": 4
+            },
+            {
+                "name": "Обзор Samsung Galaxy Z Fold 5",
+                "orginalName": "Z-FOLD",
+                "url": "https://texnomart.uz",
+                "img": "",
+                "price": "406 000",
+                "id": 34,
+                "parentId": 4
+            },
+            {
+                "name": "Обзор Apple  Iphone 14 pro max",
+                "orginalName": "IPHONE",
+                "url": "https://texnomart.uz",
+                "img": "",
+                "price": "406 000",
+                "id": 35,
+                "parentId": 4
+            }
         ]
     }
 ]

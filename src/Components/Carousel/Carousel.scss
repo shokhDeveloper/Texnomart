@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-.swiper-slide{
+.swiper-slide-utils{
     border-radius: 50px;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.251);
 }
@@ -22,4 +22,34 @@
 .swiper-slide-items h5{
     letter-spacing: 1px;
     font-size: 18px;
+}
+
+ .swiper-slide-blog{
+    border-radius: 10px;
+    width: 20%;
+}
+.swiper-slide-blog  .swiper-slide-blog-header{
+    border-radius: 10px;
+}
+.swiper-slide-blog .swiper-slide-blog-body{
+    padding: 1rem;
+    padding-bottom: 0;
+}
+.swiper-slide-blog .swiper-slide-blog-body p{
+    font-size: 15px;
+    color: grey;
+}
+.swiper-slide-blog .swiper-slide-blog-body h5{
+    font-size: 17px;
+}
+.swiper-blog .swiper-slide a{
+    opacity: 1;
+}
+.swiper-blog .swiper-slide a img{
+    object-fit: contain;
+}
+.swiper-blog-button {
+    width: 100%;
+    @include functions.flex(flex-end);
+    margin-bottom: 1rem;
 }

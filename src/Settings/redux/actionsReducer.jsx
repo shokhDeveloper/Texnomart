@@ -58,7 +58,9 @@ const initialState = {
       password: false
     },
     successUpdate: false,
-    successText: "Profile ma'lumotlari muvaffaqiyatli yangilandi hurmatli "
+    successText: "Profile ma'lumotlari muvaffaqiyatli yangilandi hurmatli ",
+    podborkiActiveLink: "popular",
+    continuation: false
 }
 export const slice = createSlice({
   name: "texnomart",
@@ -194,6 +196,12 @@ export const slice = createSlice({
     },
     setSuccessUpdateProfileData(state, action){
       state.successUpdate = action.payload
+    },
+    setPodborActiveLink(state, action){
+      state.podborkiActiveLink = action.payload
+    },
+    setContinuations(state, action){
+      state.continuation = action.payload
     }
     }
 })

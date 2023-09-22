@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useSelector } from "react-redux"
 import { useNavigate } from "react-router"
+import { Button } from "../../Settings"
 
 export const Delete = () => {
     const {user} = useSelector((state) => state.Reducer)
@@ -28,8 +29,8 @@ export const Delete = () => {
     }
     return(
         <div className="profile-settings-delete-elements">
-        <button id="watching-logout" onClick={handleClick}>Vaqtincha chiqib ketish</button>
-        <button id="logout" onClick={handleClick}>Profileni o'chirib chiqib ketish</button>
+        <Button  id="watching-logout" onClick={handleClick}>Vaqtincha chiqib ketish</Button>
+        <Button id="logout" onClick={handleClick}>Profileni o'chirib chiqib ketish</Button>
         </div>
     )
 }

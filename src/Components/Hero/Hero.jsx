@@ -99,7 +99,7 @@ export const Hero = () => {
               </Routes>              
             </div>
         </Modal>
-        <Modal type={"shoppingCart"} modal={shoppingModal}>
+        <Modal type={"korzina"} modal={shoppingModal}>
             <Shopping/>
         </Modal>
         <Modal modal={signModalFirebase} type={"sign"}>

@@ -18,14 +18,13 @@
     height: auto;
     border-radius: 10px;
 }
-
 .modal-sign, .modal-error{
     width: 35%;
     background: #fff;
     padding: 1rem;
     color: black;
     height: auto;
-    border-radius: 10px
+    border-radius: 10p
 }
 .modal-header{
     @include functions.flex(space-between);

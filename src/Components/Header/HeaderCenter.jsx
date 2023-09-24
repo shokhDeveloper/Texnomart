@@ -9,7 +9,7 @@ import { useCart } from "react-use-cart";
 export const HeaderCenter = () => {
   const searchRef = useRef();
   const {items} = useCart()
-  const {headerActive, token, user} = useSelector((state) => state.Reducer)  
+  const {headerActive, token, user, tovarLocals} = useSelector((state) => state.Reducer)  
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const handleClick = (event) => {
@@ -91,6 +91,7 @@ export const HeaderCenter = () => {
                 <NavLink className={"headerCenter-link"}>Taqqoslash</NavLink>
               </li>
               <li onClick={handleRouteClick} className="headerCenter-item sevimlilar">
+                <p className="sevimlilar-count">{tovarLocals.length ? tovarLocals.length : null}</p>
                 <NavLink className={"headerCenter-link"} to={"sevimlilar"}>Sevimlilar</NavLink>
               </li>
               <li onClick={() => {

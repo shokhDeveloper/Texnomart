@@ -217,7 +217,7 @@ export const ProfileSettings = () => {
                       })
                     )
                   }
-                  type="password"
+                  type="text"
                   id="password"
                   name="password"
                   className={errors?.password ? "error-input": "default-input"}

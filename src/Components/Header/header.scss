@@ -379,13 +379,16 @@
 .headerCenter-item{
     position: relative;
 }
-.shopping-items-count{
+.shopping-items-count, .sevimlilar-count {
     position: absolute;
     top: 0;
     right: 0;
-    background: crimson;
+    background: variebles.$y;
     border-radius: 50%;
     color: #fff;
     padding: 0px 5px;
     transform: translateY(-10px);
+}
+.header-center .sevimlilar{
+    position: relative;
 }

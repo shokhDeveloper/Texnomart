@@ -31,6 +31,14 @@
       "lastname": "Musinkulova",
       "date": "22.09.2023, 22:39:14 Register at its user ",
       "id": 5
+    },
+    {
+      "email": "shohijahonmusinkulov@gmail.com",
+      "password": "$2a$10$tTZ5mPjIQFPpdnMd8EWZtujkJ2JX1SclvaQhu118K.5MwDvwA6y02",
+      "name": "Shohijahon",
+      "lastname": "Musinkulov",
+      "date": "23.09.2023, 13:46:32 Register at its user ",
+      "id": 6
     }
   ],
   "posts": [],
@@ -125,5 +133,23 @@
       "id": 35,
       "parentId": 4
     }
-  ]
+  ],
+  "popular":  [
+    {
+        "name": "Iphone 14 pro max",
+        "img": "http://localhost:3000/static/media/Iphone.9bf682f521a715d48d7f.png",
+        "notprice": "5 213 333",
+        "price": "4 692 000",
+        "parentId": 5,
+        "id": 36
+    },
+    {
+        "name": "Samsung Galaxy Z-FOLD",
+        "img": "http://localhost:3000/static/media/ZFOLD.a5db53b4d9e04f3f381d.png",
+        "notprice": "5 213 333",
+        "price": "4 692 000",
+        "parentId": 5,
+        "id": 37
+    }
+]
 }

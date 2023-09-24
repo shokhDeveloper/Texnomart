@@ -1,0 +1,64 @@
+@use "../../Settings/scss/variebles.scss";
+@use "../../Settings/scss/functions.scss";
+.hero-application{
+    width: 100%;
+    background: #f7f7f7;
+    border-radius: 10px;
+    margin: 3rem 0rem;
+}
+.hero-application-inner {
+    width: 100%;
+    display: grid;
+    grid-template: repeat(1, auto) / 40% 40%;
+    justify-content: center;
+    align-items: stretch;
+    position: relative;
+    
+}
+.hero-application-image{
+    position: relative;
+}
+.hero-application-image img{
+    position: absolute;
+    top: 0.5rem;
+    transform: scaleY(1.1) scaleX(1.1);
+}
+.hero-application-text{
+    padding-top: 2rem;
+}
+.hero-application-text *{
+    margin: 0;
+    padding: 0;
+}
+.hero-application-text-inner{
+    width: 80%;
+}
+.hero-application-text h3{
+    font-size: 40px;
+    padding: 1rem 0rem;
+    font-weight: 900;
+}
+.hero-application-text h4{
+    padding: 1rem 0rem;
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+    font-weight: 100;
+}
+.hero-application-text .hero-application-text-elements{
+    @include functions.flex(flex-start);
+}
+.hero-application-text-elements img{
+    padding-right: 1rem;
+    object-fit: contain;
+}
+.hero-application-text-elements .hero-application-discription-box{
+    width: 45%;
+}
+.hero-application-text .hero-application-apps{
+    padding: 2rem 0rem;
+    padding-bottom: 2.5rem;
+}
+.hero-application-apps a:nth-child(1){
+    margin-right: 1rem;
+}

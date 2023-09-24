@@ -61,7 +61,35 @@ const initialState = {
     successText: "Profile ma'lumotlari muvaffaqiyatli yangilandi hurmatli ",
     podborkiActiveLink: "popular",
     continuation: false,
-    continuationData: []
+    continuationData: [],
+    cards:[
+      {
+        img: "https://texnomart.uz/_nuxt/img/installment-1.5b634e1.svg",
+        title: "Покупка в рассрочку",
+        text: "Удобная онлайн рассрочка на товары бытовой техники в Texnomart"        
+      },
+      {
+        img: "https://texnomart.uz/_nuxt/img/installment-2.c1acd6f.svg",
+        title: "Покупка в рассрочку",
+        text: "Удобная онлайн рассрочка на товары бытовой техники в Texnomart"        
+      },
+      {
+        img: "https://texnomart.uz/_nuxt/img/installment-4.e18dc34.svg",
+        title: "Покупка в рассрочку",
+        text: "Удобная онлайн рассрочка на товары бытовой техники в Texnomart"        
+      },
+      {
+        img: "https://texnomart.uz/_nuxt/img/installment-4.e18dc34.svg",
+        title: "Покупка в рассрочку",
+        text: "Удобная онлайн рассрочка на товары бытовой техники в Texnomart"        
+      },
+      {
+        img: "https://texnomart.uz/_nuxt/img/installment-5.1e3f49b.svg",
+        title: "Покупка в рассрочку",
+        text: "Удобная онлайн рассрочка на товары бытовой техники в Texnomart"        
+      }
+    ],
+    popularData: []
 }
 export const slice = createSlice({
   name: "texnomart",
@@ -206,6 +234,9 @@ export const slice = createSlice({
     },
     setContinuationData(state, action){
       state.continuationData = action.payload
+    },
+    setPopularData(state, action){
+      state.popularData = action.payload
     }
     }
 })

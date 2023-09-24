@@ -1,0 +1,34 @@
+@use "../../Settings/scss/variebles.scss";
+.about-hero{
+    margin-top: 5rem;
+}
+.hero-cards-title-box{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.hero-cards-title-box h2{
+    color: variebles.$b;
+}
+.hero-cards{
+    width: 100%;
+    display: grid;
+    grid-template: repeat(1, auto) / repeat(5, 1fr);
+    list-style: none;
+    border: 1px solid variebles.$border;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.hero-cards .hero-card:not(:last-child){
+    border-right: 1px solid variebles.$border;
+}
+.hero-cards .hero-card{
+    padding: 1rem;
+    text-align: center;
+}
+.hero-card h5{
+    color: #333;
+    line-height: 23px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}

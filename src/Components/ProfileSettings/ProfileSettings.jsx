@@ -23,7 +23,6 @@ export const ProfileSettings = () => {
       const request = await getProfile(user.id).catch((error) =>
       console.log(error)
       );
-      console.log("ishladi")
       const response = await request.data;
     
         dispatch(Action.setUserProfile(response));

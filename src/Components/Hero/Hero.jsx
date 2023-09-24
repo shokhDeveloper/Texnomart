@@ -22,6 +22,10 @@ import { FirebaseForm } from "../Modal/FirebaseForm";
 import { FirebaseFormLogin } from "../Modal/FirebaseFormLogin";
 import { Podborki } from "../Podborki";
 import { BlogCarousel } from "../Carousel/BlogCarousel";
+import { Applications } from "../Applications";
+import { Cards } from "../Cards";
+import { Popular } from "../Popular";
+import { Footer } from "../Footer";
 export const Hero = () => {
   const {sign_modal, shoppingModal, signModalFirebase, signModalForFirebaseLogin} = useSelector((state) => state.Reducer)
   const [swiper, setSwiper] = useState(null)
@@ -119,14 +123,15 @@ export const Hero = () => {
           </div>
           <FirebaseFormLogin/>
       </Modal>
-
         <SwiperTovar id={0}/>
-        
         <SwiperTovar id={1}/>
-              
         <Podborki/>
         <BlogCarousel id={4}/>
+        <Applications/>
+        <Cards/>
+        <Popular/>
       </div>
+        <Footer/>
     </div>
   );
 };

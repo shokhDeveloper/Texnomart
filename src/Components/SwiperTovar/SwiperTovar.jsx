@@ -49,14 +49,14 @@ export const SwiperTovar = ({id}) => {
         <button id="next" onClick={handleClick} className="swiper-button-next border-transparent"/>
         {tovars[id].cards?.map((item) => {
             return(
-                <SwiperSlide className="swiper-tovar-box">
-                    <div className="swiper-tovar-header">
+                <SwiperSlide className="swiper-tovar-box tovar-card">
+                    <div className="swiper-tovar-header tovar-header">
                         <Like indexId={id} id={item.id}/>
                     </div>
-                    <div className="swiper-tovar-body">
+                    <div className="swiper-tovar-body tovar-body">
                         <img src={item.img} width={item?.width? item.width: 200} height={item.id === 1 ? 50: item.id === 4 ? 52: 70 || item?.height ? item.height: 100} alt="Texnomart" />
                         <h4>{item.parentId !== 0 ?  item.name.split(" ").slice(0,1).join(" "): item.name}:</h4>    
-                        <div className="swiper-tovar-kredit">
+                        <div className="swiper-tovar-kredit tovar-kredit">
                             <p>382 075 so'mdan / 24 Oy</p>
                         </div>
                         <div className="swiper-tovar-price">
@@ -65,7 +65,7 @@ export const SwiperTovar = ({id}) => {
                                     <p> <del>{item.notprice} so'm</del></p>
                                 </>
                             )}
-                            <div className="swiper-shopping-box">
+                            <div className="swiper-shopping-box tovar-shopping-box">
                             <p>{item.price} so'm</p>
                             <Button onClick={ () => handleShop(item)} type="light"  > <img src={Shop} alt="" /></Button>
                             </div>

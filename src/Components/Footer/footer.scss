@@ -1,0 +1,90 @@
+@use "../../Settings/scss/variebles.scss";
+@use "../../Settings/scss/functions.scss";
+footer{
+    width: 100%;
+    background: variebles.$b;
+    padding: 1rem 0rem;
+    margin-top: 4rem
+}
+.footer-inner-box{
+    @include functions.flex(space-between);
+    align-items: flex-start;
+}
+.footer-inner-box .footer-item{
+    color: #fff;
+}
+.footer-inner-box .footer-item:nth-child(1) p{  
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+.footer-inner-box .footer-item:nth-child(1) .footer-item-number{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 900;
+}
+.footer-item:nth-child(1) .footer-item-links{
+    @include functions.flex(flex-start);
+    padding: 1.5rem 0rem;
+    padding-bottom: 1rem;
+}
+.footer-item:nth-child(1) .footer-item-links a{
+    padding: 1.4rem 1.4rem;
+    background: #d9d9d933;
+    display: inline-block;
+    margin: 1rem 0rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 23px; 
+    border-radius: 10px;
+}
+.footer-item:nth-child(1) .footer-item-links a:not(:last-child){
+    margin-right: 1rem;
+}
+.footer-item:nth-child(1) .footer-item-links a:nth-child(1){
+    background-image: url("https://www.pngfind.com/pngs/b/53-530160_twitter-png-logo.png");
+}
+.footer-item:nth-child(1) .footer-item-links a:nth-child(2){
+    background-image: url("../../Settings/assets/images/pngfind.com-social-media-icons-black-6813035.png");
+}
+.footer-item:nth-child(1) .footer-item-links a:nth-child(3){
+    background-image: url("../../Settings/assets/images/MediumPng.png");
+    background-size: 30px;
+}
+.footer-item:nth-child(1) .footer-item-links a:nth-child(4){
+    background-image: url("../../Settings/assets/images/Twitter.png");
+    background-size: 30px;
+    filter: invert(1);
+    background-color: #a6a6a6;
+}
+.footer-item:nth-child(1) .footer-item-apps{
+    padding: 1rem 0rem;
+    padding-bottom: 2rem;
+}
+.footer-item:nth-child(1) .footer-item-apps a:not(:last-child){
+    margin-right: 1rem;
+}
+.footer-item .footer-item-list{
+    list-style:  none;
+    margin: 0;
+    padding: 0;
+}
+.footer-item:nth-child(1){
+    position: relative;
+    top: 1.4rem;
+}
+.footer-item:not(:first-child) .footer-item-title-box h4{
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.footer-item .footer-item-list li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.footer-item .footer-item-list li:not(:last-child){
+    padding-bottom: 0.8rem;
+}

@@ -301,5 +301,25 @@
                 "parentId": 4
             }
         ]
+    },
+    {
+        "cards": [
+            {
+                "name": "Iphone 14 pro max",
+                "img": "http://localhost:3000/static/media/Iphone.9bf682f521a715d48d7f.png",
+                "notprice": "5 213 333",
+                "price": "4 692 000",
+                "parentId": 5,
+                "id": 36
+            },
+            {
+                "name": "Samsung Galaxy Z-FOLD",
+                "img": "http://localhost:3000/static/media/ZFOLD.a5db53b4d9e04f3f381d.png",
+                "notprice": "5 213 333",
+                "price": "4 692 000",
+                "parentId": 5,
+                "id": 37
+            }
+        ]
     }
 ]

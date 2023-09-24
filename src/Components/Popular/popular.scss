@@ -1,0 +1,20 @@
+@use "../../Settings/scss/functions.scss";
+@use "../../Settings/scss/variebles.scss";
+.popular{
+    margin-top: 3rem;
+}
+.popular-cards{
+    display: grid;
+    grid-template: repeat(1, auto) / repeat(2, 25%);
+    grid-column-gap: 20px;
+}
+.popular-cards .tovar-card{
+    width: 100%;
+}
+.popular-title-box h2 {
+    color: variebles.$b;
+    padding-bottom: 1rem;
+}
+.popular-cards{
+    padding: 0;
+}

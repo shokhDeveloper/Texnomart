@@ -4,11 +4,11 @@
     margin-top: 2rem;
     padding: 1rem;
 }
-.swiper-tovar-header{
+.swiper-tovar-header, .tovar-header{
     @include functions.flex(flex-end);
     width: 100%;
 }
-.swiper-tovar-box{
+.tovar-card{
     padding: 1rem;
     border-radius: 10px;
     width: 100%;   
@@ -17,13 +17,13 @@
     @include functions.flex(space-between);
     flex-direction: column;
 }
-.swiper-tovar-box:not(:last-child), .swiper-tovar-box:not(:nth-child(4)){
+.tovar-card:not(:last-child), .tovar-card:not(:nth-child(4)){
     margin-right:  30px !important;    
 }
-.swiper-tovar-box .swiper-shopping-box{
+.tovar-card .tovar-shopping-box{
     @include functions.flex(space-between);
 }
-.swiper-tovar-box .swiper-tovar-body h4{
+.tovar-card .tovar-body h4{
     // letter-spacing: 1px;
     line-height: 25px;
     font-weight: 100;

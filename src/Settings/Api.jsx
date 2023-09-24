@@ -10,5 +10,10 @@ export const Api = {
         return(
             axios.get(process.env.REACT_APP_SERVER + "/continuation")
         )
+    },
+    getPopular(){
+        return(
+            axios.get(process.env.REACT_APP_SERVER + "/popular")
+        )
     }
 }

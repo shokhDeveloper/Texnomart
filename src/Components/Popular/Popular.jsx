@@ -6,16 +6,19 @@ import Shop from "../../Settings/assets/images/shop.svg"
 import { Like } from "../Like"
 import { useCart } from "react-use-cart"
 export const Popular = () => {
-    const {token, popularData} = useSelector(({Reducer}) => Reducer)
+    const {token, popularData, popularType} = useSelector(({Reducer}) => Reducer)
     const {addItem} = useCart()
     const dispatch = useDispatch()
     const {getPopular} = Api
     const handleGetTovar = useCallback(async () => {
-        const request = await getPopular().catch(error => console.log(error))
-        if(request?.status === 200 || request?.status === 304){
-            const response = await request.data
-            dispatch(Action.setPopularData(response))
-        }
+        if(!popularType){
+            const request = await getPopular().catch(error => console.log(error))
+            if(request?.status === 200 || request?.status === 304){
+                const response = await request.data
+                dispatch(Action.setPopularType(true))
+                dispatch(Action.setPopularData(response))
+            }
+        }       
     },[token])
     const handleShop = (tovar) => {
         addItem(tovar)

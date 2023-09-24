@@ -19,7 +19,7 @@
     border-radius: 10px;
 }
 
-.modal-sign{
+.modal-sign, .modal-error{
     width: 35%;
     background: #fff;
     padding: 1rem;
@@ -113,4 +113,23 @@
 }
 .modal-korzina{
     width: 80%;
+}
+.modal-error{
+    text-align: center;
+}
+.modal-error h4{
+    color: variebles.$b;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.modal-error .modal-error-discription{
+    width: 90%;
+    margin: 0 auto;
+}
+.modal-error-discription h5{
+    color: variebles.$b;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 25px;
 }

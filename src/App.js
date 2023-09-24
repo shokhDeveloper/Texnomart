@@ -6,6 +6,7 @@ import { Loader } from "./Components";
 import i18n from "i18next";
 import {initReactI18next} from "react-i18next"
 import { useCart } from "react-use-cart";
+import axios from "axios";
 function App() {
   const {loader, token} = useSelector((state) => state.Reducer)
   const dispatch = useDispatch()
@@ -25,6 +26,13 @@ function App() {
   },[loader])
   let o = "color: crimson;"
   console.log("%cWelcome to Teхnomart", "color:".concat(o, ";font-size:20px"))
+  useEffect(() => {
+    if(!navigator.onLine){
+      dispatch(Action.setErrorNetwork(true))
+    }else{
+      dispatch(Action.setErrorNetwork(false))
+    }
+  },[navigator?.online])
   const handleClick = (event) => {
     if(event.target.matches(".catalot_btn") || event.target.matches(".catalog-item") ){
       return false
@@ -39,8 +47,8 @@ function App() {
   const handleScroll = () => {
     if (window.scrollY > 500) {
       dispatch(Action.setTopDisplay(true));
-    } else {
       dispatch(Action.setTopDisplay(false));
+    } else {
     }
     if(window.scrollY > (Math.round(214.39999389648438)-1)){
       dispatch(Action.setHeaderActive(true))

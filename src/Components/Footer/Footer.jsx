@@ -5,6 +5,7 @@ import { Action } from "../../Settings"
 import { useEffect } from "react"
 
 export const Footer = () => {
+    const date = new Date()
     const {position} = useSelector(({Reducer}) => Reducer)
     const dispatch = useDispatch()
     const handleNavigator = () => {
@@ -26,6 +27,8 @@ export const Footer = () => {
     return(
         <footer>
             <div className="container">
+                <div className="footer-inner">
+
                 <div className="footer-inner-box">
                     <div className="footer-item">
                        <p><small>Возник вопрос? Звоните</small></p> 
@@ -112,6 +115,17 @@ export const Footer = () => {
                     Адреса магазинов Тошкент
                     </a>
                 </address>
+                </div>
+                <div className="footer-bottom-inner">
+                    <div className="footer-bottom-discription">
+                        <p>2016-{date.getFullYear()} ©texnomart.uz. Все права защищены. Указанная стоимость товаров и условия их приобретения действительны по состоянию на текущую дату</p>
+                    </div>
+                    <div className="footer-bottom-idCards">
+                        <a href="https://uzcard.com"/>
+                        <a href="https://payme.com"/>
+                        <a href="https://inTend.com"/>
+                    </div>
+                </div>
             </div>
         </footer>   
     )

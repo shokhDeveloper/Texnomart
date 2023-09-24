@@ -6,6 +6,10 @@ footer{
     padding: 1rem 0rem;
     margin-top: 4rem
 }
+.footer-inner{
+    border-bottom: 1px solid #dadadb5f;
+    padding-bottom: 1rem
+}
 .footer-inner-box{
     @include functions.flex(space-between);
     align-items: flex-start;
@@ -87,4 +91,50 @@ footer{
 }
 .footer-item .footer-item-list li:not(:last-child){
     padding-bottom: 0.8rem;
+}
+.footer-adress{
+    margin-top: 1rem;
+    font-style: normal;
+    margin-bottom: 1.5rem;
+}
+.footer-adress a{
+    text-decoration: underline;
+    color: #fff;
+}
+.footer-bottom-inner{
+    @include functions.flex(space-between);
+}
+.footer-bottom-inner .footer-bottom-discription{
+    flex-basis: 36%;
+}
+.footer-bottom-inner .footer-bottom-discription p{
+    color: #e5e7eb;
+    font-size: 12px;
+    line-height: 23px;
+}
+.footer-bottom-inner .footer-bottom-idCards {
+    @include functions.flex(center);
+    padding: 1rem;
+}
+.footer-bottom-inner .footer-bottom-idCards a{
+    padding: 1rem 2rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.footer-bottom-inner .footer-bottom-idCards a:not(:last-child){
+    margin-right: 0.5rem;
+}
+.footer-bottom-inner .footer-bottom-idCards a:nth-child(1){
+    background-image: url("https://logos-download.com/wp-content/uploads/2022/01/Uzcard_Logo-700x367.png");
+    background-size: 45px;
+}
+.footer-bottom-inner .footer-bottom-idCards a:nth-child(2){
+    background-image: url("https://cdn.paycom.uz/documentation_assets/payme_01.png?target=_blank");
+}
+.footer-bottom-inner .footer-bottom-idCards a:nth-child(3){
+    background-image: url("https://api.logobank.uz/media/logos_png/Click-01.png");
+    background-size: 60px;
 }

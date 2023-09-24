@@ -89,7 +89,9 @@ const initialState = {
         text: "Удобная онлайн рассрочка на товары бытовой техники в Texnomart"        
       }
     ],
-    popularData: []
+    popularData: [],
+    popularType: false,
+    errorNetwork: false
 }
 export const slice = createSlice({
   name: "texnomart",
@@ -237,6 +239,12 @@ export const slice = createSlice({
     },
     setPopularData(state, action){
       state.popularData = action.payload
+    },
+    setPopularType(state, action){
+      state.popularType = action.payload
+    },
+    setErrorNetwork(state, action){
+      state.errorNetwork = action.payload
     }
     }
 })

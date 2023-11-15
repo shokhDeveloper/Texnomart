@@ -20,8 +20,9 @@ export const ProfileSettings = () => {
   const { getProfile } = Api;
   const handleGetUser = useCallback(async () => {
     if (!userProfile?.length  ) {
-      const request = await getProfile(user.id).catch((error) =>
-      console.log(error)
+      const request = await getProfile(user.id).catch((error) => {
+        return error
+      }
       );
       const response = await request.data;
     

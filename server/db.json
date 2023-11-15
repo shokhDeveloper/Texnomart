@@ -38,6 +38,14 @@
       "name": "Shohijahon",
       "lastname": "Musinkulov",
       "id": 6
+    },
+    {
+      "email": "murod@gmail.com",
+      "password": "$2a$10$OhhuyDsYyKtFuQXEJ2G1rOlUR/4oQ5j7YkKSSNFvX5NakQrpwyinS",
+      "name": "Murod",
+      "lastname": "Mavlonov",
+      "date": "28.09.2023, 15:23:42 Register at its user ",
+      "id": 7
     }
   ],
   "posts": [],
